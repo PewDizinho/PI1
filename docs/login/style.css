@@ -63,7 +63,12 @@ a#senha {
   text-align: center;
   justify-content: center;
 }
-
+.disclaimer {
+  position: absolute;
+  right:0;
+  margin-right: 10px;
+  color: white;
+}
 label {
   display: block;
   margin-bottom: 10px;

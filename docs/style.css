@@ -104,3 +104,37 @@ body {
         background-position: 0 0;
     }
 }
+.title {
+    position: relative;
+    color: #262626;
+    padding: 20px 50px;
+    font-size: larger;
+  }
+  .disclaimer {
+    position: absolute;
+    right:0;
+    margin-right: 10px;
+  
+  }
+  .title:before {
+    background: #262626;
+    color: white;
+    content: 'Grupo 1';
+    overflow: hidden;
+    position: absolute;  
+    top: 0;  
+    left: 0;
+    padding: 20px 50px;
+      -webkit-clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);  
+    clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);
+    animation: slide 4s 1s linear infinite; 
+  } 
+p {
+    color: white;
+}
+  @keyframes slide {      
+    50% {     
+      -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%); 
+    } 
+  }  
+  
