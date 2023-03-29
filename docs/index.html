@@ -8,7 +8,7 @@
     <title>UniOpet</title>
     <link rel="icon" type="img/png" href="./logoopet.png">
     <link rel="stylesheet" href="style.css">
-
+ <script src="script.js"></script>
 </head>
 <body>
     <div class="login">
@@ -17,7 +17,7 @@
 			    <img id="logo-cima" src="./opetfooter.png" alt="opetlogo">
         </a>
 			<label for="email"></label>
-			<input type="email" id="email" placeholder="email@uniopet.edu.br" name="email" required>
+			<input type="email" id="email" placeholder="email@uniopet.edu.br" onchange="emailChanges()" name="email" required>
 
 			<label for="senha"></label>
 			<input type="password" id="senha" name="senha" placeholder="Senha" required>
@@ -28,6 +28,7 @@
 		</form>
         
 	</div>
+   
     <footer>
 	 
         <img id="logo-baixo" src="./opetfooter.png" alt="opetlogo">
