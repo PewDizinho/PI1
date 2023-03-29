@@ -1,1 +1,1 @@
-(SITE)[https://pewdizinho.github.io/PI1]
+[SITE](https://pewdizinho.github.io/PI1)
