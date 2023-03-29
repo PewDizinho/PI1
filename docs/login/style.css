@@ -1,0 +1,110 @@
+body {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #105004, #10a335);
+  background-attachment: fixed;
+}
+
+
+.login {
+  font-family: 'Courier New', Courier, monospace;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 83vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-cima {
+  width: 50%;
+  display: flex;
+  margin-left: 76px;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #105004;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+}
+
+#logo-baixo {
+  width: 10%;
+}
+
+p {
+  color: white;
+  margin-left: 10px;
+}
+
+a#senha {
+  margin-left: 109px;
+  margin-top: 15px;
+  display: inline-flex;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  height: 45px;
+  border-style: none none solid solid;
+  border-width: medium medium 2px 1px;
+  border-color: initial initial #000000 initial;
+  outline: none;
+}
+input::placeholder {
+  color: #8d8d8d;
+  font-weight: lighter;
+  padding: 15px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin-left: 86px;
+  font-family: cursive;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transition:0.5s  ease;
+  background-color: #fc8f00;
+  transform: scale(1.1);
+}
