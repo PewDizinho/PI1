@@ -168,9 +168,9 @@
     }
 }
 
-@media only handheld and (max-width: 600px) {
+@media (min-width:1025px) {
     footer {
-        background-color: #105004;
+        background-color: #ff00b3;
         position: fixed;
         bottom: 0;
         left: 1;
