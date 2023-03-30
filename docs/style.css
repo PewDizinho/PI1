@@ -1,4 +1,4 @@
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1025px) {
     footer {
         background-color: #105004;
         position: fixed;
@@ -168,7 +168,7 @@
     }
 }
 
-@media (min-width:1025px) {
+@media (max-width:1025px) {
     footer {
         background-color: #ff00b3;
         position: fixed;
