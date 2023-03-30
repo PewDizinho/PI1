@@ -165,3 +165,9 @@ p {
     background-color: #04AA6D;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+    }
+}
