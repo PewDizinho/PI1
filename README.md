@@ -4,19 +4,20 @@
 
 * [Baixando o código](https://github.com/PewDizinho/PI1/edit/main/README.md#baixando-c%C3%B3digo)
 * [Enviando o código](https://github.com/PewDizinho/PI1/edit/main/README.md#enviando-os-arquivos)
-
+* [Regras para formatação de arquivos](https://github.com/PewDizinho/PI1/edit/main/README.md#regras-para-formata%C3%A7%C3%A3o-de-arquivos)
 
 ## Baixando código
 
 1 - Baixe o código em ZIP
 
-<img src="https://user-images.githubusercontent.com/55335712/228983951-83b86095-0b43-421b-ace8-1d2d50b25e0e.png">
-
 2 - Descompacte o ZIP e abra a pasta pelo [Visual Studio Code](https://code.visualstudio.com/download)
 
-3 - Mexa apenas dentro na pasta ./DOCS/, ela é a página ROOT, ou seja, a Raíz do nosso site
+3 - Mexa apenas dentro na pasta `./docs/`, ela é a página ROOT, ou seja, a Raíz do nosso site
 
 4 - Após realizar suas alterações, você irá enviar os arquivos
+
+
+<img src="https://user-images.githubusercontent.com/55335712/228983951-83b86095-0b43-421b-ace8-1d2d50b25e0e.png">
 
 
 ## Enviando os arquivos
