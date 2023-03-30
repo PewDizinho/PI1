@@ -41,9 +41,8 @@ footer {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 72px;
+  height: 80px;
 }
 
 #logo-baixo {
@@ -53,6 +52,7 @@ footer {
 p {
   color: white;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 a#senha {

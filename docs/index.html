@@ -9,23 +9,28 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="styleMobile.css" media="handheld">
     <title>UniOpet</title>
+
 </head>
 
+
 <body>
+    <div class="topnav">
+        <a id="home" class="active" href="#home" onclick="changeNavBar('home')">Pagina Inicial</a>
+        <a id="news" class="desactived" href="#news" onclick="changeNavBar('news')">Novidades</a>
+        <a id="contact" class="desactived"  href="#contact" onclick="changeNavBar('contact')">Suporte</a>
+        <a id="about" class="desactived"  href="#about"  onclick="changeNavBar('about')">Sobre</a>
+    </div>
     <div class="title">Projeto PI</div>
 
     <button class="glowbutton" type="button" id="mybtn">Login</button>
 
-    <script type="text/javascript">
-        document.getElementById("mybtn").onclick = function () {
-            location.href = "./login/index.html";
-        };
-    </script>
+
 </body>
 <footer>
 
     <img id="logo-baixo" src="./assets/opetfooter.png" alt="opetlogo">
     <p class="disclaimer"> © Esse não é um site oficial do grupo UniOpet</p>
 </footer>
+<script src="./script.js"></script>
 
 </html>
