@@ -13,6 +13,12 @@ footer {
     width: 9.5%;
 }
 
+:root {
+    --width: clamp(200px, 50%, 600px);
+    --heigth: clamp(200px, 50%, 600px);
+    --textFont: clamp(10, 50%, 17);
+}
+
 html,
 body {
     margin: 0;
@@ -151,7 +157,7 @@ p {
     text-align: center;
     padding: 23px 26px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: var(--textFont);
 }
 
 .topnav a:hover {
@@ -160,7 +166,7 @@ p {
 }
 
 .topnav a.active {
-    font-size: 17px;
+    font-size: var(--textFont);
     padding: 23px 26px;
     background-color: #04AA6D;
     color: white;
