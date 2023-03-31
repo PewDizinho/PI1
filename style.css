@@ -24,9 +24,11 @@ body {
     background-image: linear-gradient(to bottom, #0b962d, #105004);
     background-attachment: fixed;
 }
+
 .center {
     text-align: center;
 }
+
 .categorias {
     color: #000;
     font-size: larger;
@@ -149,7 +151,7 @@ p {
 
 .list-container {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 10px;
     background-color: white;
     max-width: 12%;
@@ -178,17 +180,14 @@ p {
 
 .programming {
     background-color: #4CAF50;
-    /* Green */
 }
 
 .design {
     background-color: #2196F3;
-    /* Blue */
 }
 
 .marketing {
     background-color: #f44336;
-    /* Red */
 }
 
 .outros {
