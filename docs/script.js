@@ -12,15 +12,11 @@ function changeNavBar(wichOne) {
     for (var i of allIds) {
         document.getElementById(i).className = "nill";
     }
-    document.getElementById(wichOne).className = "active";
-    if (wichOne == "home") {
-        document.getElementById("title").className = "active";
-    } else {
-        document.getElementById("title").className = "title";
-    }
+
+    alert(wichOne)
     switch (wichOne) {
         case "home":
-
+            location.href = "https://PewDizinho.github.io/PI1/"
             break;
 
         case "new":
@@ -31,9 +27,10 @@ function changeNavBar(wichOne) {
             break;
 
         case "about":
-            location.href = "./subpages/sobre/index.html"
+            location.href = "https://PewDizinho.github.io/PI1/subpages/sobre/index.html"
             break;
     }
+    document.getElementById(wichOne).className = "active";
 }
 
 
