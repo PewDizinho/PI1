@@ -10,13 +10,7 @@ footer {
 }
 
 #logo-baixo {
-    width: clamp(9.5%, 15%, 10%);
-}
-
-:root {
-    --width: clamp(200px, 50%, 600px);
-    --heigth: clamp(200px, 50%, 600px);
-    --textFont: clamp(10, 50%, 17);
+    width: 9.5%;
 }
 
 html,
@@ -26,6 +20,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100vh;
+
     height: 100%;
     background-image: linear-gradient(to bottom, #105004, #10a335);
     background-attachment: fixed;
@@ -118,7 +113,6 @@ body {
     position: absolute;
     right: 0;
     margin-right: 10px;
-    font-size: clamp(20%, 100%, 150%);
 
 }
 
@@ -157,7 +151,7 @@ p {
     text-align: center;
     padding: 23px 26px;
     text-decoration: none;
-    font-size: var(--textFont);
+    font-size: 17px;
 }
 
 .topnav a:hover {
@@ -166,8 +160,15 @@ p {
 }
 
 .topnav a.active {
-    font-size: var(--textFont);
+    font-size: 17px;
     padding: 23px 26px;
     background-color: #04AA6D;
     color: white;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: linear-gradient(to bottom, #ffffff, #000000);
+
+    }
 }
