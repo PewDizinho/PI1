@@ -27,6 +27,18 @@
     </div>
 
 
+    <div class="container">
+        <form action="" class="search-bar">
+            <input type="search" name="search" pattern=".*\S.*" placeholder='O que você procura?' required>
+            <button class="search-btn" type="submit"
+                onclick='test("Paulo","https://avatars.githubusercontent.com/u/55335712?s=400&u=84bcc58f0a015ca07e5a0aace02e1e95154329c4&v=4", "Programador","Paulo fez 25 programas esse mês!")'>
+                <span>Pesquisar</span>
+            </button>
+        </form>
+    </div>
+
+    <div id="card-container"></div>
+
     <div class="list-container">
         <div class="list">
             <p class="categorias center">Categorias</p>
@@ -34,10 +46,9 @@
             <button class="item design">Design</button>
             <button class="item marketing">Marketing</button>
             <button class="item outros">Outros</button>
-
         </div>
-        <div class="spacer"></div>
     </div>
+
 
 </body>
 <footer>
