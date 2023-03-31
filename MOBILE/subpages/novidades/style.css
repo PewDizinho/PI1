@@ -1,0 +1,5 @@
+p:not(.disclaimer) {
+    margin-left: 5%;
+    margin-top: 2%;
+    font-family: 'Lucida Sans';
+}

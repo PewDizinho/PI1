@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="./assets/logoopet.png">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Produtos do Futuro</title>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "./MOBILE/index.html";
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="topnav">
+        <a id="home" class="active" onclick="changeNavBar('home')">Pagina Inicial</a>
+        <a id="news" class="nill" href="./subpages/novidades/index.html" onclick="changeNavBar('news')">Novidades</a>
+        <a id="contact" class="nill" href="./subpages/suporte/index.html" onclick="changeNavBar('contact')">Suporte</a>
+        <a id="about" class="nill" href="./subpages/sobre/index.html" onclick="changeNavBar('about')">Sobre</a>
+        <button class="glowbutton" type="button" id="mybtn">Login</button>
+    </div>
+
+
+    <div class="list-container">
+        <div class="list">
+            <button class="item programming">Programming</button>
+            <button class="item design">Design</button>
+            <button class="item marketing">Marketing</button>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+</body>
+<footer>
+    <img id="logo-baixo" src="./assets/opetfooter.png" alt="opetlogo">
+    <p class="disclaimer"> © Esse não é um site oficial do grupo UniOpet</p>
+</footer>
+<script src="./script.js"></script>
+
+</html>

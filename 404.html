@@ -1,0 +1,150 @@
+<!-- 
+    Essa página é a página do erro 404, se você estudante de TI não sabe o que é erro 404, se mata
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="PI1/assets/logoopet.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100vh;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #105004, #10a335);
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            font-size: 300%;
+        }
+
+        p.title {
+            text-align: center;
+            font-size: 150%;
+        }
+
+        p.message {
+            text-align: center;
+
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+
+        .glowbutton {
+            width: 150px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #e0e0e0;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            justify-content: right;
+            line-height: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            margin-top: 2%;
+            right: 0;
+            left: 0;
+
+        }
+
+        .glowbutton:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .glowbutton:active {
+            color: #000
+        }
+
+        .glowbutton:active:after {
+            background: transparent;
+        }
+
+        .glowbutton:hover:before {
+            opacity: 1;
+        }
+
+        .glowbutton:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .img {
+                width: 80%;
+            }
+        }
+
+    </style>
+    <title>Produtos do Futuro</title>
+</head>
+
+<body>
+    <header>404!</header>
+    <p class="title">Página Inexistente!</p>
+    <p class="message">Não sabemos como você veio parar aqui, mas já que está aqui, aprecie essa imagem de um dos nossos
+        criadores</p>
+    <img class="img" src="https://pewdizinho.github.io/PI1/assets/fotosZoadas/trobojadeadpool.png"
+        alt="trobojadeadpool">
+    <button onclick="location.href='/PI1/index.html'" class="glowbutton">Inicio</button>
+</body>
+
+
+</html>
