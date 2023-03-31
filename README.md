@@ -12,9 +12,7 @@
 
 2 - Descompacte o ZIP e abra a pasta pelo [Visual Studio Code](https://code.visualstudio.com/download)
 
-3 - Mexa apenas dentro na pasta `./docs/`, ela é a página ROOT, ou seja, a Raíz do nosso site
-
-4 - Após realizar suas alterações, você irá enviar os arquivos
+3 - Após realizar suas alterações, você irá enviar os arquivos
 
 
 <img src="https://user-images.githubusercontent.com/55335712/228983951-83b86095-0b43-421b-ace8-1d2d50b25e0e.png">
@@ -41,6 +39,6 @@
 
 #### Algumas regras que devem ser seguidas na hora da realização de criação de novas páginas
 
-1 - Toda página deverá estar dentro de uma pasta, não deve haver mais de um arquivo html por página, por questão de organização, então por exemplo, você quer criar uma página de login, você cria a página `./docs/login/` e dentro dessa página você cria o `index.html` da página de login, e vamos dizer que dentro dessa página você queira abrir uma página de "Esqueci a senha", você deverá criar uma pasta `./docs/login/esqueciasenha/` e dentro dessa pasta criar o `index.html` dessa página
+1 - Toda página deverá estar dentro de uma pasta, não deve haver mais de um arquivo html por página, por questão de organização, então por exemplo, você quer criar uma página de login, você cria a página `./login/` e dentro dessa página você cria o `index.html` da página de login, e vamos dizer que dentro dessa página você queira abrir uma página de "Esqueci a senha", você deverá criar uma pasta `./login/esqueciasenha/` e dentro dessa pasta criar o `index.html` dessa página
 
-2 - TODAS as imagens devem ser colcadas em `./docs/assets/`
+2 - TODAS as imagens devem ser colcadas em `./assets/`
