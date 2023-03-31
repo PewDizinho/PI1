@@ -57,11 +57,12 @@
             border-radius: 10px;
             justify-content: right;
             line-height: 12px;
-            margin-top: 5px;
-            margin-right: 5px;
+            margin-left: auto;
+            margin-right: auto;
             position: absolute;
-            top: 0;
+            margin-top: 2%;
             right: 0;
+            left: 0;
 
         }
 
@@ -80,6 +81,8 @@
             opacity: 0;
             transition: opacity .3s ease-in-out;
             border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .glowbutton:active {
@@ -104,6 +107,8 @@
             left: 0;
             top: 0;
             border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @keyframes glowing {
@@ -119,6 +124,14 @@
                 background-position: 0 0;
             }
         }
+
+        @media (max-width: 500px) {
+            .img {
+                width: 10%;
+            }
+           
+        }
+
     </style>
     <title>Produtos do Futuro</title>
 </head>
@@ -128,7 +141,8 @@
     <p class="title">Página Inexistente!</p>
     <p class="message">Não sabemos como você veio parar aqui, mas já que está aqui, aprecie essa imagem de um dos nossos
         criadores</p>
-    <img class="img" src="https://pewdizinho.github.io/PI1/assets/fotosZoadas/trobojadeadpool.png" alt="trobojadeadpool">
+    <img class="img" src="https://pewdizinho.github.io/PI1/assets/fotosZoadas/trobojadeadpool.png"
+        alt="trobojadeadpool">
     <button onclick="location.href='/PI1/index.html'" class="glowbutton">Inicio</button>
 </body>
 
