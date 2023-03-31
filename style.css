@@ -24,6 +24,14 @@ body {
     background-image: linear-gradient(to bottom, #0b962d, #105004);
     background-attachment: fixed;
 }
+.center {
+    text-align: center;
+}
+.categorias {
+    color: #000;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .glowbutton {
     width: 150px;
@@ -183,3 +191,6 @@ p {
     /* Red */
 }
 
+.outros {
+    background-color: rgb(179, 179, 0);
+}
