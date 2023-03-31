@@ -170,10 +170,20 @@ p {
     .topnav a {
         font-size: 10px;
     }
+
     .topnav a.active {
         font-size: 10px;
     }
-    .glowbutton { 
-        margin-top: 25px;
+
+    .glowbutton {
+        margin-top: 50%;
+    }
+
+    #logo-baixo {
+        width: 15%;
+    }
+
+    .disclaimer {
+        font-size: smaller;
     }
 }
