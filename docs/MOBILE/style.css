@@ -4,6 +4,11 @@ body {
     background-attachment: fixed;
 }
 
+
+img {
+    max-width: 50%;
+}
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
