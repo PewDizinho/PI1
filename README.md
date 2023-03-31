@@ -2,9 +2,9 @@
 
 #### Aqui terá apenas o código original do site, esse readme funciona como um passo a passo de como usar:
 
-* [Baixando o código](https://github.com/PewDizinho/PI1/edit/main/README.md#baixando-c%C3%B3digo)
-* [Enviando o código](https://github.com/PewDizinho/PI1/edit/main/README.md#enviando-os-arquivos)
-* [Regras para formatação de arquivos](https://github.com/PewDizinho/PI1/edit/main/README.md#regras-para-formata%C3%A7%C3%A3o-de-arquivos)
+* [Baixando o código](https://github.com/PewDizinho/PI1/blob/main/README.md#baixando-código)
+* [Enviando os arquivos](https://github.com/PewDizinho/PI1#enviando-os-arquivos)
+* [Regras para formatação de arquivos](https://github.com/PewDizinho/PI1#regras-para-formatação-de-arquivos)
 
 ## Baixando código
 
