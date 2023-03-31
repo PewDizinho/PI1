@@ -2,7 +2,7 @@ footer {
     background-color: #105004;
     position: fixed;
     bottom: 0;
-    left: 1;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -109,10 +109,8 @@ body {
 }
 
 .disclaimer {
-    position: absolute;
-    right: 0;
+    text-align: center;
     margin-right: 10px;
-
 }
 
 .title:before {
@@ -187,4 +185,3 @@ p {
         font-size: smaller;
     }
 }
-
