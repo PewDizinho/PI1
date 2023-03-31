@@ -1,5 +1,5 @@
 const allIds = ["home", "news", "contact", "about"];
-
+ 
 
 
 document.getElementById("mybtn").onclick = () => {
