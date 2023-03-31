@@ -101,41 +101,15 @@ body {
     }
 }
 
-.title {
-    position: relative;
-    color: #262626;
-    padding: 20px 50px;
-    font-size: larger;
-}
-
 .disclaimer {
     text-align: center;
     margin-right: 10px;
-}
-
-.title:before {
-    background: #262626;
-    color: white;
-    content: 'Grupo 1';
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 50px;
-    -webkit-clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
-    animation: slide 4s 1s linear infinite;
 }
 
 p {
     color: white;
 }
 
-@keyframes slide {
-    50% {
-        -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%);
-    }
-}
 
 .topnav {
     background-color: #333;
@@ -163,6 +137,53 @@ p {
     background-color: #04AA6D;
     color: white;
 }
+
+
+.list-container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px; 
+    padding: 10px;
+    background-color: white;
+    max-width: 12%;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.list {
+    display: block;
+}
+
+.spacer {
+    flex-grow: 2;
+}
+
+.item {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.programming {
+    background-color: #4CAF50;
+    /* Green */
+}
+
+.design {
+    background-color: #2196F3;
+    /* Blue */
+}
+
+.marketing {
+    background-color: #f44336;
+    /* Red */
+}
+
+
 
 @media (max-width: 500px) {
     .topnav a {
