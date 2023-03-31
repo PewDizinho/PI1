@@ -183,26 +183,3 @@ p {
     /* Red */
 }
 
-
-
-@media (max-width: 500px) {
-    .topnav a {
-        font-size: 10px;
-    }
-
-    .topnav a.active {
-        font-size: 10px;
-    }
-
-    .glowbutton {
-        margin-top: 50%;
-    }
-
-    #logo-baixo {
-        width: 50%;
-    }
-
-    .disclaimer {
-        font-size: smaller;
-    }
-}
