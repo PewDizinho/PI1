@@ -19,7 +19,6 @@ body {
     padding: 0;
     font-family: 'Lucida Sans';
     width: 100%;
-    height: 100vh;
     height: 100%;
     background-image: linear-gradient(to bottom, #0b962d, #105004);
     background-attachment: fixed;
@@ -29,11 +28,6 @@ body {
     text-align: center;
 }
 
-.categorias {
-    color: #000;
-    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .glowbutton {
     width: 150px;
@@ -120,7 +114,6 @@ p {
     color: white;
 }
 
-
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -149,12 +142,18 @@ p {
 }
 
 
+.categorias {
+    color: #000;
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .list-container {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 5%;
+    padding: 1%;
     background-color: white;
-    max-width: 12%;
+    max-width: 17%;
+    min-height: 20%;
     margin-top: 10%;
     margin-left: 2%;
 }
@@ -163,19 +162,16 @@ p {
     display: block;
 }
 
-.spacer {
-    flex-grow: 2;
-}
-
 .item {
     display: block;
-    width: 200px;
-    height: 50px;
+    width: 100%;
     margin-bottom: 10px;
     border: none;
-    border-radius: 10px;
+    padding: 15px 27px;
+    border-radius: 50px;
     color: white;
     font-weight: bold;
+    font-size: 110%;
 }
 
 .programming {
