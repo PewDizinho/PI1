@@ -1,9 +1,0 @@
-p:not(.disclaimer) {
-    margin-left: 5%;
-    margin-top: 2%;
-    font-family: 'Lucida Sans';
-}
-
-img {
-    max-width: 50%;
-}
