@@ -12,8 +12,6 @@ function changeNavBar(wichOne) {
     for (var i of allIds) {
         document.getElementById(i).className = "nill";
     }
-
-    alert(wichOne)
     switch (wichOne) {
         case "home":
             location.href = "https://PewDizinho.github.io/PI1/"
@@ -27,7 +25,7 @@ function changeNavBar(wichOne) {
             break;
 
         case "about":
-            location.href = "https://PewDizinho.github.io/PI1/subpages/sobre/index.html"
+            location.href = "https://PewDizinho.github.io/PI1/subpages/sobre/index.html";
             break;
     }
     document.getElementById(wichOne).className = "active";
