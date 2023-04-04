@@ -3,3 +3,8 @@ p:not(.disclaimer) {
     margin-top: 2%;
     font-family: 'Lucida Sans';
 }
+
+.changelog {
+    padding-top: 5%;
+    font-size: 140%;
+}

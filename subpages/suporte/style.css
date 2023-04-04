@@ -1,3 +1,24 @@
+.batman {
+    color: black;
+    margin-right: 20px;
+   animation: 0.1s infinite alternate -batman;
+}
+
+.warn {
+    font-size: larger;
+    margin-right: 20px;
+}
+@keyframes -batman {
+    0% {
+        text-align: left;
+    }
+    50% {
+        text-align: center;
+    }
+    100% {
+        text-align: right;
+    }
+}
 p:not(.disclaimer) {
     margin-left: 5%;
     margin-top: 2%;
