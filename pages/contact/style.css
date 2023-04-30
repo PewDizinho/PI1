@@ -1,0 +1,66 @@
+:root {
+    /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
+    --background-color: green;
+    --button-color: black;
+    --button-txt-color: white;
+}
+
+#modoEscuro {
+    background-color: var(--button-color);
+    color: var(--button-txt-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1.pagTitle {
+    font-size: 300%;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+}
+
+strong {
+    color: rgb(154, 255, 243);
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+i.fa {
+    color: white;
+}
+
+p#popUp {
+    color: transparent;
+    animation: popUpAnimation 2s linear infinite;
+}
+
+div.emailDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes popUpAnimation {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    70% {
+        color: white;
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0);
+    }
+}
