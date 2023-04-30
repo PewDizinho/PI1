@@ -8,8 +8,8 @@
 h1.pagTitle {
     font-size: 300%;
 }
-.img {
-    display: block;
+.img { 
+    display:  block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
