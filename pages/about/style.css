@@ -5,6 +5,34 @@
     --button-txt-color: white;
 }
 
+h1.pagTitle {
+    font-size: 300%;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 30vw;
+}
+
+p {
+    color: white;
+    margin: 0 20vw;
+    text-align: center;
+}
+
+p.imgInfo {
+    font-size: xx-small;
+}
+
+
+h1 {
+    color: white;
+
+    text-align: center;
+}
 
 #modoEscuro {
     background-color: var(--button-color);
