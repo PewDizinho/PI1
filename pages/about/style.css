@@ -28,7 +28,7 @@ img.member {
 
 }
 
-p {
+p:not(.title) {
     color: white;
     margin-left: 20vw;
     margin-right: 20vw;
