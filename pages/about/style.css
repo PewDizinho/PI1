@@ -8,8 +8,9 @@
 h1.pagTitle {
     font-size: 300%;
 }
-.img { 
-    display:  block;
+
+img.all {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -17,16 +18,40 @@ h1.pagTitle {
     width: 30vw;
 }
 
+img.member {
+    display: block;
+    float: left;
+    padding-left: 3vw;
+    padding-right: 1vw;
+    width: 15vw;
+
+
+}
+
 p {
     color: white;
-    margin: 0 20vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     text-align: center;
 }
 
+
+
 p.imgInfo {
     font-size: xx-small;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: none;
 }
 
+.aboutMember {
+    color: white;
+    margin-left: 0px;
+    margin-right: 0;
+    text-align: start;
+    text-overflow: ellipsis;
+
+}
 
 h1 {
     color: white;
