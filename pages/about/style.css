@@ -44,14 +44,6 @@ p {
     text-align: center;
 }
 
-.title {
-    font-size: smaller;
-    color: white;
-    margin-left: 0;
-    margin-right: 0.5vw;
-
-}
-
 p.imgInfo {
     font-size: xx-small;
     margin-left: 0;
@@ -77,4 +69,15 @@ p.aboutMember {
     text-align: start;
     text-overflow: ellipsis;
 
+}
+
+
+
+.title {
+    font-size: smaller;
+    color: white;
+    margin-left: 0;
+    margin-right: 0.5vw;
+    font-weight: normal;
+    text-align: start;
 }
