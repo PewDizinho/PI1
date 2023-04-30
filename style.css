@@ -39,6 +39,7 @@ ul {
   li a:hover {
     background-color: #111;
     transition: all 0.2s ease-out; 
+    cursor: pointer;
   }
   
 
