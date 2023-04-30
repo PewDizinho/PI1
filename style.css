@@ -14,3 +14,66 @@
 body {
     background-color: var(--background-color);
 }
+
+h1 {
+    position: absolute;
+    top: 0;
+    margin-left: -50%;
+    size: 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+div.cardbox {
+    position: relative;
+    width: 20vw;
+    height: 50vh;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto auto auto;
+    border-radius: 5%;
+    box-shadow: -20px -20px rgb(0, 0, 0);
+    animation: boxShadowAnimation 0.375s forwards;
+}
+
+div.cardbox:hover {
+    width: 25vw;
+    height: 70vh;
+    animation: cardBoxExpand 0.2s linear;
+}
+
+div.cardbox:not(hover) {
+    animation: cardBoxUnexpand 0.2s linear;
+}
+
+@keyframes cardBoxExpand {
+    from {
+        width: 20vw;
+        height: 50vh;
+    }
+
+    to {
+        width: 25vw;
+        height: 70vh;
+    }
+}
+
+@keyframes cardBoxUnexpand {
+    from {
+
+        width: 25vw;
+        height: 70vh;
+    }
+
+    to {
+        width: 20vw;
+        height: 50vh;
+    }
+}
