@@ -1,62 +1,90 @@
+const cookieConsent = localStorage.getItem("cookie_consent");
+const colors = [
+    /**
+     * Com as variaveis dentro do :root você utiliza:
 
-const allIds = ["home", "news", "contact", "about"];
+     {
+        cssVar: "NOME DA VAR",
+        whiteColor: "VALOR NO MODO CLARO",
+        blackColor: "VALOR NO MODO ESCURO"
+     },
+     
+     * Sempre adicione os "" as , e : utilizando os mesmos nomes "cssVar", "whiteColor" e "blackColor"
+     */
+    {
+        cssVar: "--background-color",
+        whiteColor: "white",
+        blackColor: "black",
+    },
+    {
+        cssVar: "--button-color",
+        whiteColor: "black",
+        blackColor: "white",
+    },
+    {
+        cssVar: "--button-txt-color",
+        whiteColor: "white",
+        blackColor: "black",
+    },
+];
 
+//Essa parte do código vocês ignoram
+let root = document.querySelector(':root').style;
+let whiteMode = getMode() ?? "true";
+setMode(whiteMode)
+function mudarModo() {
+    whiteMode = !whiteMode;
+    setMode(whiteMode);
 
-function doClickAction() {
-    location.href = "./login/index.html";
-}
-function doDoubleClickAction() {
-    location.href = "./404.html";
-}
-
-var timer = 0;
-var delay = 400;
-var prevent = false;
-
-$("#mybtn")
-    .on("click", function () {
-        timer = setTimeout(function () {
-            if (!prevent) {
-                doClickAction();
-            }
-            prevent = false;
-        }, delay);
-    })
-    .on("dblclick", function () {
-        clearTimeout(timer);
-        prevent = true;
-        doDoubleClickAction();
-    });
-function changeNavBar(wichOne) {
-    for (var i of allIds) {
-        document.getElementById(i).className = "nill";
+    for (let i of colors) {
+        root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
     }
-    document.getElementById(wichOne).className = "active";
 }
 
 
-function test(name, pfp, role, info) {
-    // Create card element
-    const card = document.createElement("div");
-    card.className = "card";
+function setMode(mode) {
+    if (cookieConsent) {
+        const date = new Date();
+        date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000); // Set the cookie to expire in one year
+        console.log(mode)
 
-    const img = document.createElement("img");
-    img.src = pfp;
-    card.appendChild(img);
+        document.cookie = `whiteMode=${mode}; expires=${date.toGMTString()}; path=/`;
+    }
+}
 
-    const h2 = document.createElement("h2");
-    h2.innerText = name;
-    card.appendChild(h2);
+function getMode() {
+    const name = "whiteMode=";
+    const cookies = document.cookie.split(";");
 
-    const span = document.createElement("span");
-    span.innerText = role;
-    card.appendChild(span);
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.startsWith(name)) {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
 
-    const p = document.createElement("p");
-    p.innerText = info;
-    card.appendChild(p);
+    return null;
+}
 
-    // Add card to container
-    const container = document.getElementById("card-container");
-    container.appendChild(card);
+
+
+if (!cookieConsent) {
+    const banner = document.createElement("div");
+    banner.className = "cookie-banner";
+    banner.innerHTML = `
+    <p>This website uses cookies to improve your experience. By continuing to use this site, you consent to our use of cookies.</p>
+    <button class="cookie-accept">Accept</button>
+    <button class="cookie-decline">Decline</button>
+  `;
+    document.body.appendChild(banner);
+    const acceptBtn = banner.querySelector(".cookie-accept");
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookie_consent", "true");
+        banner.style.display = "none";
+    });
+    const declineBtn = banner.querySelector(".cookie-decline");
+    declineBtn.addEventListener("click", () => {
+        localStorage.setItem("cookie_consent", "false");
+        banner.style.display = "none";
+    });
 }
