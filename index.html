@@ -2,26 +2,33 @@
 <html lang="en">
 
 <head>
+    <title>Home</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/png" href="./assets/icon.png">
     <link rel="stylesheet" href="style.css" media="screen">
-    <title>Produtos do Futuro</title>
+    <link rel="stylesheet" href="navBarStyle.css" media="screen">
+    <script src="colorMode.js">mudarModo()</script>
+
+
 </head>
-<ul>
+
+
+<ul class="category">
+    <p class="title">Produtos <br>do Futuro</p>
     <li><a>⏏ 『Home』</a></li>
-    <li><a><b>?</b> 『Sobre』</a></li>
+    <li><a href="./pages/about/index.html"><b>?</b> 『Sobre』</a></li>
     <li><a>☎ 『Contato』</a></li>
     <li><a>&#128100;『Área do Cliente』</a></li>
+
 </ul>
 
-<button onclick="mudarModo()">MUDAR MODO</button>
-<!-- O "mudarModo() precisa estar no botão que vai mudar o modo" -->
 
 
+<button onclick="mudarModo()" id="modoEscuro">Modo Escuro</button>
 
-<script src="colorMode.js"></script>
+
 
 </html>

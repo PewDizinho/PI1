@@ -30,7 +30,7 @@ const colors = [
 
 //Essa parte do código vocês ignoram
 let root = document.querySelector(':root').style;
-let whiteMode = getMode() ?? "true";
+let whiteMode = getMode() ?? true;
 setMode(whiteMode)
 function mudarModo() {
     whiteMode = !whiteMode;
@@ -39,6 +39,8 @@ function mudarModo() {
     for (let i of colors) {
         root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
     }
+
+    document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
 }
 
 

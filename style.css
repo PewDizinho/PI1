@@ -5,7 +5,8 @@
     --button-txt-color: white;
 }
 
-button {
+
+#modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
 }
@@ -13,49 +14,3 @@ button {
 body {
     background-color: var(--background-color);
 }
-ul {
-    list-style-type: none;
-    margin: 5vw;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  li {
-    display: inline-block;
-    position: relative; 
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-    transition: all 0.2s ease-out; 
-    cursor: pointer;
-  }
-  
-
-  li::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transform: scaleX(0); 
-    transform-origin: left;
-    transition: transform 0.2s ease-out;
-  }
-  
-  li:hover::before {
-    transform: scaleX(1); 
-  }
