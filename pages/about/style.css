@@ -52,7 +52,9 @@ p.imgInfo {
     text-overflow: ellipsis;
 
 }
-
+p.inv {
+    color: transparent;
+}
 h1 {
     color: white;
 
