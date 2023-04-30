@@ -5,6 +5,15 @@
     --button-txt-color: white;
 }
 
+#modoEscuro {
+    background-color: var(--button-color);
+    color: var(--button-txt-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
 h1.pagTitle {
     font-size: 300%;
 }
@@ -28,14 +37,20 @@ img.member {
 
 }
 
-p:not(.title) {
+p {
     color: white;
     margin-left: 20vw;
     margin-right: 20vw;
     text-align: center;
 }
 
+.title {
+    font-size: smaller;
+    color: white;
+    margin-left: 0;
+    margin-right: 0.5vw;
 
+}
 
 p.imgInfo {
     font-size: xx-small;
@@ -52,20 +67,13 @@ p.imgInfo {
     text-overflow: ellipsis;
 
 }
+
 p.inv {
     color: transparent;
 }
+
 h1 {
     color: white;
 
     text-align: center;
-}
-
-#modoEscuro {
-    background-color: var(--button-color);
-    color: var(--button-txt-color);
-}
-
-body {
-    background-color: var(--background-color);
 }
