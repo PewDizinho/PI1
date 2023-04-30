@@ -59,14 +59,6 @@ p.imgInfo {
     text-align: none;
 }
 
-.aboutMember {
-    color: white;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: start;
-    text-overflow: ellipsis;
-
-}
 
 p.inv {
     color: transparent;
@@ -76,4 +68,13 @@ h1 {
     color: white;
 
     text-align: center;
+}
+
+p.aboutMember {
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: start;
+    text-overflow: ellipsis;
+
 }
