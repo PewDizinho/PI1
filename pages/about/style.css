@@ -25,6 +25,15 @@ img.all {
     margin-top: 2%;
     margin-bottom: 1%;
     width: 30vw;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    box-shadow: -10px 10px rgb(0, 0, 0);
+    border-radius: 5%;
+}
+
+img.all:hover {
+    width: 35vw;
+    height: 150%;
 }
 
 img.member {
