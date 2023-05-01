@@ -30,20 +30,22 @@ const colors = [
 
 //Essa parte do código vocês ignoram
 let root = document.querySelector(':root').style;
-let whiteMode = getMode() ;
-console.log(whiteMode)
+let whiteMode = getMode();
 function mudarModo() {
     whiteMode = !whiteMode;
     setMode(whiteMode);
+    initMode()
+}
 
+
+function initMode() {
     for (let i of colors) {
         root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
     }
 
     document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
+
 }
-
-
 function setMode(mode) {
     if (cookieConsent) {
         const date = new Date();
