@@ -30,7 +30,7 @@ const colors = [
 
 //Essa parte do código vocês ignoram
 let root = document.querySelector(':root').style;
-let whiteMode = getMode();
+let whiteMode = getMode() ?? true;
 function mudarModo() {
     whiteMode = !whiteMode;
     setMode(whiteMode);
