@@ -42,7 +42,7 @@ function initMode() {
     for (let i of colors) {
         root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
     }
-
+    console.log("É" + whiteMode)
     document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
 
 }
