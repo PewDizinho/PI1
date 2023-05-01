@@ -47,10 +47,11 @@ function mudarModo() {
 function setMode(mode) {
     if (cookieConsent) {
         const date = new Date();
-        date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000); // Set the cookie to expire in one year
+        date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
         console.log(mode)
 
         document.cookie = `whiteMode=${mode}; expires=${date.toGMTString()}; path=/`;
+        console.log(document.cookie)
     }
 }
 
@@ -70,23 +71,23 @@ function getMode() {
 
 
 
-if (!cookieConsent) {
-    const banner = document.createElement("div");
-    banner.className = "cookie-banner";
-    banner.innerHTML = `
-    <p>This website uses cookies to improve your experience. By continuing to use this site, you consent to our use of cookies.</p>
-    <button class="cookie-accept">Accept</button>
-    <button class="cookie-decline">Decline</button>
-  `;
-    document.body.appendChild(banner);
-    const acceptBtn = banner.querySelector(".cookie-accept");
-    acceptBtn.addEventListener("click", () => {
-        localStorage.setItem("cookie_consent", "true");
-        banner.style.display = "none";
-    });
-    const declineBtn = banner.querySelector(".cookie-decline");
-    declineBtn.addEventListener("click", () => {
-        localStorage.setItem("cookie_consent", "false");
-        banner.style.display = "none";
-    });
-}
+// if (!cookieConsent) {
+//     const banner = document.createElement("div");
+//     banner.className = "cookie-banner";
+//     banner.innerHTML = `
+//     <p>This website uses cookies to improve your experience. By continuing to use this site, you consent to our use of cookies.</p>
+//     <button class="cookie-accept">Accept</button>
+//     <button class="cookie-decline">Decline</button>
+//   `;
+//     document.body.appendChild(banner);
+//     const acceptBtn = banner.querySelector(".cookie-accept");
+//     acceptBtn.addEventListener("click", () => {
+//         localStorage.setItem("cookie_consent", "true");
+//         banner.style.display = "none";
+//     });
+//     const declineBtn = banner.querySelector(".cookie-decline");
+//     declineBtn.addEventListener("click", () => {
+//         localStorage.setItem("cookie_consent", "false");
+//         banner.style.display = "none";
+//     });
+// }
