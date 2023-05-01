@@ -25,7 +25,7 @@ div.cardbox {
     align-items: center;
     margin: 10vh auto auto auto;
     border-radius: 5%;
-    box-shadow: -20px -20px rgb(0, 0, 0);
+    box-shadow: -20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
 
@@ -45,7 +45,7 @@ img.icon {
 
 p, a {
     color: rgb(0, 0, 0);
-
+    font-weight: bold;
     text-align: center;
 }
 p{
@@ -68,10 +68,10 @@ p{
     }
 
     70% {
-        box-shadow: -25px -25px;
+        box-shadow: -25px 25px;
     }
 
     100% {
-        box-shadow: -20px -20px;
+        box-shadow: -20px 20px;
     }
 }

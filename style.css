@@ -47,14 +47,16 @@ div.cardbox {
     align-items: center;
     margin: 10vh auto auto auto;
     border-radius: 5%;
-    box-shadow: -20px -20px rgb(0, 0, 0);
+    box-shadow: -20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
 
 p.hiddenStuff {
     color: var(--hintTextColor);
 }
-
+div.cardboxVendedor {
+    box-shadow: 20px 20px rgb(0, 0, 0);
+}
 div.cardbox:hover {
     width: 25vw;
     height: 70vh;

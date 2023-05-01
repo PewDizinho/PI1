@@ -1,4 +1,9 @@
-﻿body {
+﻿:root {
+    --clientInfo: none;
+    --vendedorInfo: none;
+}
+
+body {
     background-color: green;
 }
 
@@ -10,6 +15,14 @@
 
 }
 
+p.clientInfo {
+    display: var(--clientInfo);
+
+}
+
+p.vendedorInfo {
+    display: var(--vendedorInfo);
+}
 
 div.cardbox {
     position: relative;
@@ -18,22 +31,52 @@ div.cardbox {
     padding: 10px;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 10vh auto auto auto;
     border-radius: 5%;
-    box-shadow: -20px -20px rgb(0, 0, 0);
+    box-shadow: -20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
+}
+
+
+
+h1.topTitle {
+    color: white;
+    text-align: center;
+}
+
+h1.continuar {
+    
+    cursor: pointer;
 }
 
 div.cardbox:hover {
     width: 25vw;
-    height: 70vh;
+    height: 60vh;
     animation: cardBoxExpand 0.2s linear;
+}
+
+div.vendedorCardBox:hover {
+    --vendedorInfo: display;
+}
+
+div.clientCardBox:hover {
+    --clientInfo: display;
 }
 
 div.cardbox:not(hover) {
     animation: cardBoxUnexpand 0.2s linear;
+}
+
+img.money {
+    position: relative;
+    width: 40%;
+    height: 30%;
+}
+
+div.vendedorCardBox {
+    box-shadow: 20px 20px rgb(0, 0, 0);
 }
 
 @keyframes cardBoxExpand {
@@ -44,7 +87,7 @@ div.cardbox:not(hover) {
 
     to {
         width: 25vw;
-        height: 70vh;
+        height: 60vh;
     }
 }
 
@@ -52,7 +95,7 @@ div.cardbox:not(hover) {
     from {
 
         width: 25vw;
-        height: 70vh;
+        height: 60vh;
     }
 
     to {
