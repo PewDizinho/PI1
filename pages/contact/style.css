@@ -18,7 +18,7 @@ h1.pagTitle {
     font-size: 300%;
 }
 
-h1, p {
+h1, p:not(.title) {
     color: white;
     text-align: center;
 }

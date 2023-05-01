@@ -43,23 +43,14 @@ img.icon {
     top: auto;
 }
 
-p, a {
+p:not(p.title), a {
     color: rgb(0, 0, 0);
-    font-weight: bold;
+
     text-align: center;
 }
-p{
+
+p:not(p.title) {
     font-size: 5vb;
-}
-
-
-.title {
-    font-size: smaller;
-    color: white;
-    margin-left: 0;
-    margin-right: 0.5vw;
-    font-weight: normal;
-    text-align: start;
 }
 
 @keyframes boxShadowAnimation {
