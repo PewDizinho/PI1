@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdd389d174.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,19 +25,34 @@
         <li><a href="../../pages/contact/index.html">☎ 『Contato』</a></li>
         <li><a href="../../pages/about/index.html"><b>?</b> 『Sobre』</a></li>
     </ul>
+    <div class="icone-login">
+        <img class="icone" src="../../assets/icon png.png" alt="">
+    </div>
     <div class="login">
-        <form>
-            <img class="icon" src="https://pewdizinho.github.io/PI1/assets/login-1.png" alt="login-1">
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="seuemail@email.com" name="email" required>
-
-            <label for="senha"></label>
-            <input type="password" id="senha" name="senha" placeholder="Senha" required>
-
-            <input type="submit" value="Entrar">
-            <br>
-            <a id="senha" href="../../pages/login/forgotpassword/index.html">Esqueceu sua senha?</a>
-            <a id="registro" href="../../pages/login/registro/index.html">Ainda não possui cadastro?</a>
+        <form class="login-box">
+            <h1>Login</h1>
+            <div class="icon1">
+                <label for="email"></label>
+                <div class="icon-box1">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <input type="email" id="email" placeholder="Seuemail@email.com" name="email" required>
+            </div>
+            <div class="icon2">
+                <label for="senha"></label>
+                <div class="icon-box2">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Entrar">
+                <input type="submit" value="Registrar">
+            </div>
+            <div class="links">
+                <a id="senha" href="../../pages/login/forgotpassword/index.html">Esqueceu sua senha?</a>
+                <a id="registro" href="../../pages/login/registro/index.html">Ainda <br> não possui cadastro?</a>
+            </div>
         </form>
 
     </div>
