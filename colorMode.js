@@ -71,7 +71,7 @@ function getMode() {
     return null;
 }
 
-document.addEventListener("onload", initMode());
+
 
 // if (!cookieConsent) {
 //     const banner = document.createElement("div");
