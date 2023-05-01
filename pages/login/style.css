@@ -1,108 +1,114 @@
-body{
-    background-color: green;
+body {
+  background-color: green;
 }
+
 .login {
-    font-family: 'Montserrat', sans-serif;
-    width: 40vw;
-    margin: 4% auto;
-    padding: 20px;
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+  font-family: 'Montserrat', sans-serif;
+  width: 40vw;
+  margin: 4% auto;
+  padding: 20px;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
-  
-  #logo-cima {
-    width: 20%;
-    display: flex;
-    margin: 0 auto;
-  }
-  
-  form {
-    background-color: #ffffff;
-    border-radius: 5%;
-    padding: 20px;
-    box-shadow: -20px 20px rgb(0, 0, 0);
-    animation: boxShadowAnimation 0.375s forwards;
+
+#logo-cima {
+  width: 20%;
+  display: flex;
+  margin: 0 auto;
 }
-    @keyframes boxShadowAnimation {
-    0% {
-        box-shadow: 0px 0px;
-    }
 
-    70% {
-        box-shadow: -25px 25px;
-    }
+form {
+  background-color: #ffffff;
+  border-radius: 5%;
+  padding: 20px;
+  box-shadow: -20px 20px rgb(0, 0, 0);
+  animation: boxShadowAnimation 0.375s forwards;
+}
 
-    100% {
-        box-shadow: -20px 20px;
-    }
-}  
 
-  
-  h1 {
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+p {
+  color: white;
+  margin-left: 10px;
+}
+
+a#senha,
+a#registro {
+  display: flex;
+  margin: 3% auto;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 10px solid #7b7b7b;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 14%;
+  height: 45px;
+  border-style: solid solid solid solid;
+  border-width: medium medium 2px 1px;
+  border-color: initial initial #000000 initial;
+  border-top-color: #4f4f4f3d;
+   box-shadow: -3px 3px rgb(0, 0, 0);
+  outline: none;
+}
+
+input::placeholder {
+  color: #272727;
+  font-weight: lighter;
+  padding: 15px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  margin: 5%;
+  margin-left: 86px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transition: 0.5s ease;
+  background-color: #fc8f00;
+  transform: scale(1.1);
+}
+
+@keyframes boxShadowAnimation {
+  0% {
+    box-shadow: 0px 0px;
   }
-  
-  p {
-    color: white;
-    margin-left: 10px;
+
+  70% {
+    box-shadow: -25px 25px;
   }
-  
-  a#senha,
-  a#registro {
-    display: flex;
-    margin: 3% auto;
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    justify-content: center;
+
+  100% {
+    box-shadow: -20px 20px;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input[type="email"],
-  input[type="password"] {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 10px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-top: 14%;
-    height: 45px;
-    border-style: none none solid solid;
-    border-width: medium medium 2px 1px;
-    border-color: initial initial #000000 initial;
-    outline: none;
-  }
-  input::placeholder {
-    color: #8d8d8d;
-    font-weight: lighter;
-    padding: 15px;
-    font-size: 14px;
-  }
-  
-  input[type="submit"] {
-    font-family: 'Montserrat', sans-serif;
-    width: 50%;
-    margin: 5%;
-    margin-left: 86px;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    transition:0.5s  ease;
-    background-color: #fc8f00;
-    transform: scale(1.1);
-  }
+}
