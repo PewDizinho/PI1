@@ -3,8 +3,16 @@
     --background-color: green;
     --button-color: black;
     --button-txt-color: white;
+
+    --hintTextColor: transparent;
 }
 
+@property --opacity {
+    syntax: '<number>';
+    /* <- defined as type number for the transition to work */
+    initial-value: 0;
+    inherits: false;
+}
 
 #modoEscuro {
     background-color: var(--button-color);
@@ -43,6 +51,10 @@ div.cardbox {
     animation: boxShadowAnimation 0.375s forwards;
 }
 
+p.hiddenStuff {
+    color: var(--hintTextColor);
+}
+
 div.cardbox:hover {
     width: 25vw;
     height: 70vh;
@@ -62,6 +74,7 @@ div.cardbox:not(hover) {
     to {
         width: 25vw;
         height: 70vh;
+        --hintTextColor: black;
     }
 }
 
