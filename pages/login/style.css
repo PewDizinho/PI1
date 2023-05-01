@@ -1,7 +1,7 @@
 body {
   background-color: green;
 }
-
+/* Icone do site e botão de login */
 .icone{
   width: 25%;
   display: flex;
@@ -11,6 +11,7 @@ body {
   display: flex;
   text-align: center;
 }
+/* Formulário */
 .login-box{
   width: 450px;
 }
@@ -25,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* icones dentro do email e da senha */
 .icon1 i {
   position: absolute;
   font-size: 20px;
@@ -45,6 +47,7 @@ body {
   padding: 14px;
   border-radius: 60%;
 }
+/* Fundo e animações do form */
 form {
   background-color: #ffffff;
   border-radius: 5%;
@@ -61,7 +64,7 @@ h1 {
   margin-left: 10px;
 }
 
-
+/* formatação dos inputs e placeholders */
 label {
   display: block;
   margin-bottom: 10px;
@@ -89,6 +92,7 @@ input::placeholder {
   padding: 50px;
   font-size: 14px;
 }
+/* Botões e links */
 .botoes{
   display: flex;
   justify-content: space-between;
@@ -113,6 +117,28 @@ a#registro {
   text-decoration: underline ;
 
 }
+input[type="submit"] {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 6%;
+  border: none;
+  border-radius: 7%;
+  cursor: pointer;
+  margin: 5% auto;
+}
+
+input[type="submit"]:hover {
+  transition: 0.5s ease;
+  background-color: #fc8f00;
+  transform: scale(1.1);
+}
+/* Logins alternativos */
 .login-option{
   font-family: 'Montserrat', sans-serif;
   margin: 5% auto;
@@ -125,6 +151,7 @@ a#registro {
 }
 .google-login img{
   width: 15%;
+  padding: 3%;
 }
 .google-login p{
   font-size: 14px;
@@ -147,28 +174,8 @@ a#registro {
   color: rgb(255, 255, 255);
   margin-left: 5%;
 }
-input[type="submit"] {
-  display: flex;
-  flex-direction: row;
-  font-family: 'Montserrat', sans-serif;
-  width: 40%;
-  align-items: center;
-  justify-content: center;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 6%;
-  border: none;
-  border-radius: 7%;
-  cursor: pointer;
-  margin: 5% auto;
-}
 
-input[type="submit"]:hover {
-  transition: 0.5s ease;
-  background-color: #fc8f00;
-  transform: scale(1.1);
-}
-
+/* Animação da boxshadow */
 @keyframes boxShadowAnimation {
   0% {
     box-shadow: 0px 0px;
