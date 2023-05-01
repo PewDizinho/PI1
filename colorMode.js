@@ -43,10 +43,10 @@ function initMode() {
         for (let i of colors) {
             root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
         }
-        console.log("É" + whiteMode)
+        console.log("Whitemode ligado? " + whiteMode)
         document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
 
-    }, 1000);
+    }, 2000);
 
 }
 function setMode(mode) {
