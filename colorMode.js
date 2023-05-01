@@ -39,14 +39,11 @@ function mudarModo() {
 
 
 function initMode() {
-    setTimeout(() => {
-        for (let i of colors) {
-            root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
-        }
-        console.log("Whitemode ligado? " + whiteMode)
-        document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
-
-    }, 2000);
+    for (let i of colors) {
+        root.setProperty(i.cssVar, (whiteMode ? i.whiteColor : i.blackColor));
+    }
+    console.log("Whitemode ligado? " + whiteMode)
+    document.getElementById("modoEscuro").innerText = whiteMode ? "Modo Escuro" : "Modo Claro";
 
 }
 function setMode(mode) {

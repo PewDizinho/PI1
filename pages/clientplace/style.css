@@ -66,3 +66,13 @@ p:not(p.title) {
         box-shadow: -20px 20px;
     }
 }
+
+.column {
+    position: absolute;
+    top: 15vh;
+    left: 1vw;
+}
+a.tempo {
+    color: white;
+    cursor: pointer;
+}

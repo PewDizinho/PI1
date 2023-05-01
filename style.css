@@ -7,13 +7,6 @@
     --hintTextColor: transparent;
 }
 
-@property --opacity {
-    syntax: '<number>';
-    /* <- defined as type number for the transition to work */
-    initial-value: 0;
-    inherits: false;
-}
-
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
@@ -30,42 +23,7 @@ h1 {
     size: 10%;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
 
-div.cardbox {
-    position: relative;
-    width: 20vw;
-    height: 50vh;
-    padding: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh auto auto auto;
-    border-radius: 5%;
-    box-shadow: -20px 20px rgb(0, 0, 0);
-    animation: boxShadowAnimation 0.375s forwards;
-}
-
-p.hiddenStuff {
-    color: var(--hintTextColor);
-}
-div.cardboxVendedor {
-    box-shadow: 20px 20px rgb(0, 0, 0);
-}
-div.cardbox:hover {
-    width: 25vw;
-    height: 70vh;
-    animation: cardBoxExpand 0.2s linear;
-}
-
-div.cardbox:not(hover) {
-    animation: cardBoxUnexpand 0.2s linear;
-}
 
 @keyframes cardBoxExpand {
     from {
