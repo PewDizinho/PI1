@@ -1,6 +1,6 @@
 :root {
     /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
-    --background-color: rgb(0, 0, 0);
+    --background-color: green;
     --header-background-color: rgb(0, 190, 0);
     --button-color: black;
     --button-txt-color: white;
@@ -168,6 +168,11 @@ img.icon {
 }
 
 
+img.menuBoxIcon {
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-left: 15px;
+}
 
 h1.perfil {
     font-size: 200%;
