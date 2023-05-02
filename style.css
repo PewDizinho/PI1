@@ -147,7 +147,7 @@ div.menuBoxInfo {
 }
 
 p.menuBoxInfo {
-    margin: auto 0 auto 0;
+    margin: auto 50px auto 0;
 }
 
 a.areadoclientehref {
@@ -177,6 +177,8 @@ p.info {
 .spacer {
     flex: 1;
 }
+
+
 
 .center {
     text-align: center;
