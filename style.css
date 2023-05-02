@@ -7,6 +7,8 @@
     --hintTextColor: transparent;
 }
 
+
+
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
@@ -19,7 +21,14 @@ body {
 
 h1.title {
     color: white;
-    text-align: center;
+
+}
+
+h2.menuBoxTitle {
+    color: white;
+    padding-bottom: 1vw;
+    box-shadow: 0px 3px rgb(0, 0, 0);
+    margin-bottom: 5px;
 }
 
 h2.category {
@@ -27,6 +36,12 @@ h2.category {
     color: white;
     padding-bottom: 1vw;
     box-shadow: 0px 3px rgb(0, 0, 0);
+}
+
+
+
+h2.areadoclientehref {
+    cursor: pointer;
 }
 
 button.category {
@@ -43,14 +58,7 @@ button.category:hover {
     height: 2vw;
 }
 
-.center {
-    text-align: center;
-}
 
-div.row {
-    display: flex;
-    flex-direction: row;
-}
 
 div.column {
     display: flex;
@@ -69,18 +77,6 @@ div.categoryBox {
 
 }
 
-div.profileBox {
-    width: 20%;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.47);
-    border-color: black;
-    border-style: solid;
-    border-width: 15 px;
-    /* topo | direita | inferior | esquerda */
-    margin: auto auto auto 2vw;
-
-}
-
 div.menuBox {
     width: 70%;
     height: 70vh;
@@ -88,6 +84,114 @@ div.menuBox {
     border-color: black;
     border-style: solid;
     border-width: 15 px;
-    /* topo | direita | inferior | esquerda */
+    display: flex;
+
+
     margin: auto auto auto auto;
+}
+
+div.menuBoxInside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px 1px 1px 0px;
+
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+div.menuBoxInside::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+div.menuBoxInside::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+div.menuBoxInside::-webkit-scrollbar-thumb {
+    background: rgb(0, 219, 0);
+    border: 0.1px solid black;
+    border-radius: 5px;
+}
+
+div.menuBoxInside::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+div.profileBox {
+    position: relative;
+    width: 20vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 1vw auto 2vw;
+    border-radius: 5%;
+    box-shadow: 20px 20px 3px 1px rgb(0, 0, 0);
+    animation: boxShadowAnimation 0.375s forwards;
+}
+
+div.menuBoxCard {
+    background-color: white;
+    box-shadow: -3px 3px 3px 1px rgb(0, 0, 0);
+    border-radius: 2%;
+
+    margin: 5px;
+    width: 99%;
+    height: 25%;
+}
+
+a.areadoclientehref {
+    color: black;
+}
+
+img.icon {
+    width: 13vw;
+    position: inherit;
+    right: 10%;
+    top: auto;
+    border-radius: 100%;
+}
+
+h1.perfil {
+    font-size: 200%;
+}
+
+p.info {
+    font-size: 0.7em;
+    text-overflow: clip;
+}
+
+.center {
+    text-align: center;
+}
+
+.txtShadow {
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes boxShadowAnimation {
+    0% {
+        box-shadow: 0px 0px;
+    }
+
+    70% {
+        box-shadow: 25px 25px;
+    }
+
+    100% {
+        box-shadow: 10px 10px;
+    }
 }
