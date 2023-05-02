@@ -44,6 +44,11 @@ h2.areadoclientehref {
     cursor: pointer;
 }
 
+p#avaliacao {
+    cursor: pointer;
+    display: block;
+}
+
 button.category {
     margin-top: 1vh;
     border-radius: 20%;
