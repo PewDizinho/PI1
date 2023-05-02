@@ -137,10 +137,17 @@ div.menuBoxCard {
     background-color: white;
     box-shadow: -3px 3px 3px 1px rgb(0, 0, 0);
     border-radius: 2%;
-
     margin: 5px;
     width: 99%;
     height: 25%;
+}
+
+div.menuBoxInfo {
+    margin: auto 0 auto 0;
+}
+
+p.menuBoxInfo {
+    margin: auto 0 auto 0;
 }
 
 a.areadoclientehref {
@@ -155,6 +162,8 @@ img.icon {
     border-radius: 100%;
 }
 
+
+
 h1.perfil {
     font-size: 200%;
 }
@@ -164,8 +173,17 @@ p.info {
     text-overflow: clip;
 }
 
+
+.spacer {
+    flex: 1;
+}
+
 .center {
     text-align: center;
+}
+
+.justify {
+    justify-content: center;
 }
 
 .txtShadow {
