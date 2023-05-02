@@ -136,7 +136,7 @@ input.searchBar {
     font-size: xx-large;
     background-color: green;
     color: white;
-    content: "yo";
+
 }
 
 @keyframes menuBoxAnimation {

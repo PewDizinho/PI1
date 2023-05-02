@@ -1,9 +1,9 @@
 :root {
     /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
-    --background-color: green;
+    --background-color: rgb(0, 0, 0);
+    --header-background-color: rgb(0, 190, 0);
     --button-color: black;
     --button-txt-color: white;
-
     --hintTextColor: transparent;
 }
 
@@ -12,41 +12,82 @@
     color: var(--button-txt-color);
 }
 
+
 body {
     background-color: var(--background-color);
 }
 
-h1 {
-    position: absolute;
-    top: 0;
-    margin-left: -50%;
-    size: 10%;
+h1.title {
+    color: white;
+    text-align: center;
 }
 
-
-
-@keyframes cardBoxExpand {
-    from {
-        width: 20vw;
-        height: 50vh;
-    }
-
-    to {
-        width: 25vw;
-        height: 70vh;
-        --hintTextColor: black;
-    }
+h2.category {
+    margin-bottom: 5vh;
+    color: white;
+    padding-bottom: 1vw;
+    box-shadow: 0px 3px rgb(0, 0, 0);
 }
 
-@keyframes cardBoxUnexpand {
-    from {
+button.category {
+    margin-top: 1vh;
+    border-radius: 20%;
+    background-color: rgba(187, 255, 0, 0.701);
+    font-size: 1rem;
+    width: 10vw;
+    margin: 1vw auto 0 auto;
+}
 
-        width: 25vw;
-        height: 70vh;
-    }
+button.category:hover {
+    width: 11vw;
+    height: 2vw;
+}
 
-    to {
-        width: 20vw;
-        height: 50vh;
-    }
+.center {
+    text-align: center;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.categoryBox {
+    width: 15%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-color: black;
+    border-style: solid;
+    border-width: 15 px;
+    /* topo | direita | inferior | esquerda */
+    margin: auto 2vw auto auto;
+
+}
+
+div.profileBox {
+    width: 20%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-color: black;
+    border-style: solid;
+    border-width: 15 px;
+    /* topo | direita | inferior | esquerda */
+    margin: auto auto auto 2vw;
+
+}
+
+div.menuBox {
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-color: black;
+    border-style: solid;
+    border-width: 15 px;
+    /* topo | direita | inferior | esquerda */
+    margin: auto auto auto auto;
 }
