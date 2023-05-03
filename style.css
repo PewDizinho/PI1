@@ -174,7 +174,6 @@ button.atualizarCards {
     box-sizing: border-box;
     color: #ffffff;
     cursor: pointer;
-    position: relative;
     display: flex;
     font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     font-size: 1rem;
@@ -185,7 +184,7 @@ button.atualizarCards {
     text-align: left;
     white-space: pre;
     width: max-content;
-    margin: auto auto auto auto;
+
 }
 
 .button-67:hover {
@@ -200,8 +199,9 @@ button.atualizarCards {
 }
 
 
-/* Parent background */
-#F5F5FA img.menuBoxIcon {
+
+
+img.menuBoxIcon {
     border-radius: 100%;
     margin-right: 20px;
     margin-left: 15px;
