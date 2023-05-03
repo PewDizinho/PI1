@@ -68,61 +68,46 @@ const monthSellers = [
 function generateCard() {
 
     for (let seller of monthSellers) {
-
-        // Create card element
+        document.getElementById("gerarCardButton").style.display = "none";
         const card = document.createElement("div");
         card.className = "menuBoxCard row justify";
-
-
         const img = document.createElement("img");
         img.className = "menuBoxIcon"
-
         img.src = seller.imgUrl;
         card.appendChild(img);
-
         const infoLeft = document.createElement("div");
         infoLeft.className = "menuBoxInfo column justify";
-
         const infoRight = document.createElement("div");
         infoRight.className = "menuBoxInfo column";
-
         const name = document.createElement("p");
         const area = document.createElement("p");
         const university = document.createElement("p");
         const stars = document.createElement("p");
         const sellsThisMonth = document.createElement("p");
         const sellAllTime = document.createElement("p");
-
         name.innerText = seller.name;
         area.innerText = `Área: ${seller.area}`;
         university.innerText = `Faculdade: ${seller.university}`;
         stars.innerText = `Nota: ${seller.stars}`;
         sellsThisMonth.innerText = `Vendas realizadas esse mês: ${seller.sellsThisMonth}`;
         sellAllTime.innerText = `Vendas realizadas no total: ${seller.sellAllTime}`;
-
         name.className = "menuBoxInfo";
         area.className = "menuBoxInfo";
         university.className = "menuBoxInfo";
         stars.className = "menuBoxInfo";
         sellsThisMonth.className = "menuBoxInfo end";
         sellAllTime.className = "menuBoxInfo end";
-
-
         const spacer = document.createElement("div");
         spacer.className = "spacer";
-
         infoLeft.appendChild(name);
         infoLeft.appendChild(area);
         infoLeft.appendChild(university);
         infoLeft.appendChild(stars);
         infoRight.appendChild(sellsThisMonth);
         infoRight.appendChild(sellAllTime);
-
         card.appendChild(infoLeft);
         card.appendChild(spacer);
         card.appendChild(infoRight);
-
-        // Add card to container
         const container = document.getElementById("menuBoxInside");
         container.appendChild(card);
     }
