@@ -14,21 +14,18 @@ body {
     background-color: var(--background-color);
 }
 
-h2.first {
-    margin-top: 4vh;
-
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
-h2.painelInfo {
-    color: white;
-    text-shadow: 0.2px 0.2px rgb(0, 0, 0);
-    font-size: 100%;
-    text-align: center;
-    cursor: pointer;
+.center {
+    margin: auto auto auto auto;
 }
 
-h2.clientName {
-    font-size: larger;
+div.buttonsLayout {
+    margin-top: 5vh;
+
 }
 
 p.info {
@@ -41,6 +38,9 @@ p.info {
 h1.painelDeControle {
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
+
+    padding-bottom: 3.7vh;
+    box-shadow: 0px 3px rgb(0, 0, 0);
     font-size: 150%;
     text-align: center;
 }

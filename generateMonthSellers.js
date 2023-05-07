@@ -131,7 +131,6 @@ class SellerOfTheMonthCard {
         name.className = "menuBoxInfo txtShadow";
         area.className = "menuBoxInfo txtShadow";
         aboutMe.className = "menuBoxInfo txtShadow";
-
         university.className = "menuBoxInfo txtShadow";
         stars.className = "menuBoxInfo txtShadow";
         sellsThisMonth.className = "menuBoxInfo txtShadow";
@@ -141,7 +140,6 @@ class SellerOfTheMonthCard {
         imgBack.className = "menuBoxIcon";
         infoLeft.className = "menuBoxInfo";
         infoRight.className = "menuBoxInfo";
-
 
 
         infoLeft.appendChild(name);
