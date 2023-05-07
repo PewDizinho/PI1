@@ -292,12 +292,6 @@ button.category:active {
 }
 
 
-p.title {
-    font-size: 1em;
-    font-weight: 900;
-    text-align: center;
-}
-
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -329,12 +323,13 @@ p.title {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    width: 100%;
+    width: 99.5%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 1px solid coral;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .flip-card-front {
@@ -349,6 +344,7 @@ p.title {
     color: white;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+
 }
 
 img.menuBoxIcon {

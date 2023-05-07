@@ -48,10 +48,11 @@ li:hover::before {
 }
 
 p.title {
-    font-size: smaller;
     color: white;
     margin-left: 0;
     margin-right: 0.5vw;
-
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
 }
 
