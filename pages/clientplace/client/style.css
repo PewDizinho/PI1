@@ -19,12 +19,10 @@ h2.first {
 
 }
 
-h2.painelInfo {
-    color: white;
-    text-shadow: 0.2px 0.2px rgb(0, 0, 0);
+button.painelInfo {
+    color: rgb(0, 0, 0);
     font-size: 100%;
-    text-align: center;
-    cursor: pointer;
+
 }
 
 h2.clientName {
@@ -63,13 +61,6 @@ img.icon {
     border-radius: 100%;
 }
 
-div.painelInfo {
-    background-color: black;
-    height: max-content;
-
-    border-radius: 5%;
-    margin: auto auto auto auto;
-}
 
 div.cardbox {
     position: relative;
@@ -86,6 +77,13 @@ div.cardbox {
 }
 
 
+div.buttonsLeft {
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.painelInfo {}
 
 div.border {
     border-color: rgb(0, 0, 0);
@@ -114,19 +112,29 @@ div.bordertop {
     border-right-color: transparent;
 }
 
-div.borderleft {
-    position: relative;
-    width: 15vw;
-    height: auto;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
 
+div.column {
+    display: flex;
+    flex-direction: column;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+div.categoryBox {
+    width: 15%;
+    height: 99.5%;
+    border-color: transparent;
+    border-right-color: black;
+    border-style: solid;
+    border-width: 15 px;
+    /* topo | direita | inferior | esquerda */
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 0.4; /* Firefox */
-  }
+    opacity: 0.4;
+    /* Firefox */
+}
+
 input.searchBar {
     width: 80%;
     height: 80%;
