@@ -49,7 +49,7 @@ const monthSellers = [
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/Trobojão.jpg",
-        nome: "João Scarante",
+        name: "João Scarante",
         curso: "Análise e Desenvolvimento de Sistemas",
         title: "Programador do mês",
         university: "UniOpet",
