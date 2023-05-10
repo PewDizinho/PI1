@@ -1,10 +1,10 @@
 :root {
     /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
-    --background-color: green;
+    --background-color: #1f1f1f;
     --button-color: black;
     --button-txt-color: white;
+    --hintTextColor: transparent;
 }
-
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);

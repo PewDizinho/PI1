@@ -1,10 +1,16 @@
 ﻿:root {
     --clientInfo: none;
     --vendedorInfo: none;
+    /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
+    --background-color: #1f1f1f;
+    --button-color: black;
+    --button-txt-color: white;
+    --hintTextColor: transparent;
+
 }
 
 body {
-    background-color: green;
+    background-color: var(--background-color);
 }
 
 
@@ -46,9 +52,10 @@ h1.topTitle {
     text-align: center;
 }
 
-h1.continuar {
-    
-    cursor: pointer;
+a.continuar {
+
+   font-weight: bold;
+   font-size: 2rem;
 }
 
 div.cardbox:hover {
