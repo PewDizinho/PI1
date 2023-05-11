@@ -22,6 +22,7 @@ ul.category {
 li {
     display: inline-block;
     position: relative;
+    margin: auto 0px auto;
 }
 
 li a {
