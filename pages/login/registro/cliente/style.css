@@ -14,12 +14,182 @@ body {
 h1.titleCentral {
     color: white;
     text-align: center;
+    margin-top: 70px;
 }
 
-div.caixacentral {
-    background-color: #464646;
-    position: inherit;
-    height: 100vh;
-    width: 70vw;
+div.caixaCentral {
+    background-color: #272727;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60vh;
+    width: 50vw;
     margin: 5% auto auto auto;
+    padding: 5%;
+    box-shadow: 0 0 1px #fff, 0 0 2.5px #fff, 0 0 5px #0bca24, 0 0 7.5px #000747,
+        0 0 10px #0b37ca, 0 0 25px #0bca24;
+
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h2.pfp {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+aside.rightSide {
+    height: 90%;
+    width: 40%;
+}
+
+main.inputs {
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    height: 10%;
+
+    margin-top: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+}
+
+
+/**/
+
+.profile-pic {
+    color: transparent;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.profile-pic input {
+    display: none;
+}
+
+.profile-pic img {
+    position: absolute;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+    border-radius: 100px;
+    z-index: 0;
+}
+
+.profile-pic .-label {
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+}
+
+.profile-pic:hover .-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 10000;
+    color: rgb(250, 250, 250);
+    transition: background-color .2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+}
+
+.profile-pic span {
+    display: inline-flex;
+    padding: .2em;
+    height: 2em;
+}
+
+
+/***/
+.btn {
+    outline: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 25%;
+    position: absolute;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 10px rgb(184, 184, 184);
+    transform: translateY(-5px);
+}
+
+.btn:hover::after, .btn:hover::before {
+    height: 20px;
+    width: 20px;
+    opacity: 1;
 }

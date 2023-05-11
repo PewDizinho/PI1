@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="./style.css" media="screen">
 
-
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -19,7 +19,33 @@
     <h1 class="titleCentral">Registro Cliente</h1>
     <div class="caixaCentral">
 
+
+        <main class="inputs">
+            <input type="text" name="nome" id="name" placeholder="Seu nome">
+            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+            <input type="password" name="password" id="password" placeholder="Sua senha">
+        </main>
+        <aside class="rightSide">
+            <h2 class="pfp">Foto de Perfil</h2>
+            <div class="profile-pic">
+                <label class="-label" for="file">
+                    <span class="glyphicon glyphicon-camera"></span>
+                    <span>Change Image</span>
+                </label>
+                <input id="file" type="file" onchange="loadFile(event)" />
+                <img src="https://raw.githubusercontent.com/PewDizinho/PI1/main/assets/userIcon.png" id="output"
+                    width="200" />
+            </div>
+
+        </aside>
+
+        <button class="btn">
+            Confirmar
+        </button>
+
     </div>
+
+
 </body>
 
 </html>
