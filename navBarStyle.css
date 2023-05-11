@@ -2,42 +2,47 @@ ul.category {
     list-style-type: none;
     margin-left: 1vw;
     margin-right: 5vw;
-    padding: 0;
+    padding: 1vh;
     overflow: hidden;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    height: fit-content;
-    padding: 10px;
-    box-shadow: 0 0 0.1vw 0.3vw #1f0170, 0 0 0.4vw 0.5vw #01057d, 0 0 1vw 0.3vw #1101fb;
-    background-color: rgb(32, 32, 32);
+    border-radius: 25px;
+    color: #fff;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0bca24, 0 0 15px #0bca24,
+        0 0 20px #0bca24, 0 0 25px #0bca24;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+    background-color: #111;
+
 }
 
 
 li {
-    display: flex;
-    justify-content: center;
-    margin: auto 0 auto;
+    display: inline-block;
     position: relative;
-    height: fit-content;
-    padding-bottom: 5px;
 }
 
 li a {
+    display: block;
     color: white;
     padding: auto auto;
     text-align: center;
+    padding: 1vw 2vh;
     text-decoration: none;
+    margin-right: 1vw;
 }
 
 li a:hover {
+    background-color: #111;
     transition: all 0.2s ease-out;
     cursor: pointer;
+    border-radius: 0.5%;
 }
 
 
 li::before {
-    content: "";
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -55,7 +60,7 @@ li:hover::before {
 
 p.title {
     color: white;
-    margin-left: 0;
+    margin-left: 0.5vw;
     margin-right: 0.5vw;
     font-size: 1em;
     font-weight: 900;

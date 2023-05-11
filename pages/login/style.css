@@ -1,20 +1,32 @@
-body {
-  background-color: green;
+:root {
+  /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
+  --background-color: #1f1f1f;
+  --button-color: black;
+  --button-txt-color: white;
+  --hintTextColor: transparent;
 }
+
+body {
+  background-color: var(--background-color);
+}
+
 /* Icone do site e botão de login */
-.icone{
+.icone {
   width: 25%;
   display: flex;
   border-radius: 50%;
 }
-.login-header{
+
+.login-header {
   display: flex;
   text-align: center;
 }
+
 /* Formulário */
-.login-box{
+.login-box {
   width: 450px;
 }
+
 .login {
   font-family: 'Courier New', Courier, monospace;
   width: 400px;
@@ -26,27 +38,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 /* icones dentro do email e da senha */
 .icon1 i {
   position: absolute;
   font-size: 20px;
   color: #ffffff;
 }
+
 .icon-box1 i {
   background-color: black;
   padding: 14px;
   border-radius: 60%;
 }
+
 .icon2 i {
   position: absolute;
   font-size: 20px;
   color: #ffffff;
 }
+
 .icon-box2 i {
   background-color: black;
   padding: 14px;
   border-radius: 60%;
 }
+
 /* Fundo e animações do form */
 form {
   background-color: #ffffff;
@@ -55,10 +72,12 @@ form {
   box-shadow: -20px 20px rgb(0, 0, 0);
   animation: boxShadowAnimation 0.375s forwards;
 }
+
 h1 {
   display: flex;
   margin: auto;
 }
+
 .title p {
   color: white;
   margin-left: 10px;
@@ -92,17 +111,21 @@ input::placeholder {
   padding: 50px;
   font-size: 14px;
 }
+
 /* Botões e links */
-.botoes{
+.botoes {
   display: flex;
   justify-content: space-between;
 }
-.links{
+
+.links {
   display: flex;
 }
-a{
+
+a {
   font-family: 'Montserrat', sans-serif;
 }
+
 a#senha,
 a#registro {
   text-align: center;
@@ -110,14 +133,16 @@ a#registro {
   font-size: 11px;
   display: flex;
   text-decoration: none;
-  
-}
-.links #senha:hover,
-.links #registro:hover{
-  text-decoration: underline ;
 
 }
-input[type="submit"] {
+
+.links #senha:hover,
+.links #registro:hover {
+  text-decoration: underline;
+
+}
+
+#mainbuttons {
   display: flex;
   flex-direction: row;
   font-family: 'Montserrat', sans-serif;
@@ -133,43 +158,50 @@ input[type="submit"] {
   margin: 5% auto;
 }
 
-input[type="submit"]:hover {
+#mainbuttons:hover {
   transition: 0.5s ease;
   background-color: #fc8f00;
   transform: scale(1.1);
 }
+
 /* Logins alternativos */
-.login-option{
+.login-option {
   font-family: 'Montserrat', sans-serif;
   margin: 5% auto;
   width: 58%;
 }
-.google-login{
+
+.google-login {
   align-items: center;
   display: flex;
   border: solid 1px #272727;
 }
-.google-login img{
+
+.google-login img {
   width: 15%;
   padding: 3%;
 }
-.google-login p{
+
+.google-login p {
   font-size: 14px;
   color: gray;
   margin-left: 6%;
 }
+
 /* Logar com o facebook */
-.facebook-login{
+.facebook-login {
   background-color: #3b5998;
   margin-top: 4%;
   align-items: center;
   display: flex;
   border: solid 1px #272727;
 }
-.facebook-login img{
+
+.facebook-login img {
   width: 15%;
 }
-.facebook-login p{
+
+.facebook-login p {
   font-size: 14px;
   color: rgb(255, 255, 255);
   margin-left: 5%;
