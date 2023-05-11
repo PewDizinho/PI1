@@ -5,6 +5,7 @@
     --button-txt-color: white;
     --hintTextColor: transparent;
 }
+
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
@@ -30,10 +31,10 @@ h2.clientName {
 }
 
 p.info {
-    font-size: 0.7em;
+    font-size: 1em;
+    text-align: center;
     text-overflow: clip;
 }
-
 
 
 h1.painelDeControle {
@@ -55,12 +56,11 @@ h1.perfil {
 
 img.icon {
     width: 13vw;
-    position: inherit;
-    right: 10%;
-    top: auto;
+    position: relative;
+
+    margin: auto auto auto;
     border-radius: 100%;
 }
-
 
 div.cardbox {
     position: relative;
@@ -68,10 +68,11 @@ div.cardbox {
     height: 70vh;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     margin: auto 1vw auto auto;
-    border-radius: 5%;
+      border-radius: 25px;
     box-shadow: 20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }

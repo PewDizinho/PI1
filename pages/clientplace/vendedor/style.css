@@ -63,20 +63,14 @@ h1.perfil {
     font-size: 200%;
 }
 
+
+
 img.icon {
     width: 13vw;
-    position: inherit;
-    right: 10%;
-    top: auto;
+    position: relative;
+
+    margin: auto auto auto;
     border-radius: 100%;
-}
-
-div.painelInfo {
-    background-color: black;
-    height: max-content;
-
-    border-radius: 5%;
-    margin: auto auto auto auto;
 }
 
 div.cardbox {
@@ -85,13 +79,23 @@ div.cardbox {
     height: 70vh;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     margin: auto 1vw auto auto;
-    border-radius: 5%;
+      border-radius: 25px;
     box-shadow: 20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
+
+div.painelInfo {
+    background-color: black;
+    height: max-content;
+
+      border-radius: 25px;
+    margin: auto auto auto auto;
+}
+
 
 
 

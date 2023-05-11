@@ -19,7 +19,7 @@ h1.titleCentral {
 
 div.caixaCentral {
     background-color: #272727;
-    border-radius: 5%;
+      border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;

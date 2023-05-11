@@ -127,10 +127,11 @@ div.profileBox {
     height: 70vh;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     margin: auto 1vw auto 2vw;
-    border-radius: 5%;
+    border-radius: 25px;
     box-shadow: 20px 20px 3px 1px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
@@ -154,9 +155,9 @@ a.areadoclientehref {
 
 img.icon {
     width: 13vw;
-    position: inherit;
-    right: 10%;
+    position: relative;
     top: auto;
+    margin: auto auto auto;
     border-radius: 100%;
 }
 
@@ -200,7 +201,8 @@ h1.perfil {
 }
 
 p.info {
-    font-size: 0.7em;
+    font-size: 1em;
+    text-align: center;
     text-overflow: clip;
 }
 
@@ -278,7 +280,8 @@ p.info {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
