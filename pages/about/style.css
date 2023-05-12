@@ -5,7 +5,9 @@
     --button-txt-color: white;
     --hintTextColor: transparent;
 }
-
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
@@ -14,79 +16,91 @@
 body {
     background-color: var(--background-color);
 }
-
-h1.pagTitle {
-    font-size: 300%;
+.old-h1 {
+    color: white;
+    text-align: center;
 }
-
-img.all {
+/* 
+    Informações sobre e Foto
+*/
+.about{
+    display: flex;
+    margin: 5% 2%;
+}
+.about-text{
+    width: 100px;
+}
+h1.pagTitle {
+    margin: 3% 0;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+.left-text h1 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    width: 30vw;
+    margin: 0 auto;
+}
+.about p{
+    font-size: 15px;
+}
+.left-text{
+    color: white;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.right-text p {
+    margin: 1% auto;
+    font-size: x-small;
+    text-align: center;
+    width: 55%;
+}
+.right-text{
+    text-align: center;
+    color: white;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.imgInfo {
+    display: inline-flex;
+    color: white;
+}
+img.all {
+    width: 70%;
     padding: 10px 10px 10px 10px;
     background-color: white;
     box-shadow: -10px 10px rgb(0, 0, 0);
-      border-radius: 25px;
+    border-radius: 25px;
 }
-
-img.all:hover {
-    width: 35vw;
-    height: 150%;
+/* 
+    Imagens de membros
+*/
+.member-line{
+    width: 90%;
 }
-
-img.member {
-    display: block;
-    float: left;
-    padding-left: 3vw;
-    padding-right: 1vw;
-    width: 10vw;
-
-
-}
-
-p {
+.membros{
+    margin: 2%;
     color: white;
-    margin-left: 20vw;
-    margin-right: 20vw;
     text-align: center;
+    flex-wrap: wrap;
+    
 }
-
-p.imgInfo {
-    font-size: xx-small;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: none;
+.member-info{
+    
+    display: flex;
+    height: 100%;    
 }
-
+.aboutMember{
+    max-height: 136px;
+    width: 20%;
+    text-align: start;
+    margin: auto 2%;
+}
+img.member {
+    width: 10vw;
+    border-radius: 50%;
+}
 
 p.inv {
     color: transparent;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-p.aboutMember {
-    color: white;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: start;
-    text-overflow: ellipsis;
-
-}
-
-
-
-.title {
-    font-size: smaller;
-    color: white;
-    margin-left: 0;
-    margin-right: 0.5vw;
-    font-weight: normal;
-    text-align: start;
 }
