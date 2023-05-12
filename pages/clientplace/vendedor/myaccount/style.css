@@ -1,0 +1,71 @@
+:root {
+    --background-color: #1f1f1f;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    margin: 0px 0px 0px 0px
+}
+h2#removePointer {
+    user-select: none;
+}
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 9999px;
+    border-spacing: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5), 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+h2#bio {
+    border-radius: 0;
+
+}
+
+img.pfp {
+    border-radius: 9999px;
+    width: 13vw;
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+}
+
+div.centralBox {
+
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width: 80vw;
+    margin: 1% auto auto auto;
+    padding: 5%;
+    box-shadow: 2px 5px 10px rgb(5, 5, 5), 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+main.leftInfo {
+    height: 70vh;
+    width: 27vw;
+
+
+}
+
+aside.rightInfo {
+    height: 70vh;
+    margin-left: 2.5%;
+    width: 27vw;
+}
