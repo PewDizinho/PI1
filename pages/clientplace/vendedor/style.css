@@ -15,42 +15,37 @@ body {
     background-color: var(--background-color);
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
+h2.first {
+    margin-top: 4vh;
+
 }
 
-.center {
-    margin: auto auto auto auto;
+button.painelInfo {
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+
+
 }
 
-div.buttonsLayout {
-    margin-top: 5vh;
-
+h2.clientName {
+    font-size: larger;
+    margin: 0px;
 }
 
 p.info {
-    font-size: 0.7em;
+    font-size: 1em;
+    text-align: center;
     text-overflow: clip;
+    margin-bottom: 5px;
 }
-
 
 
 h1.painelDeControle {
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
-
-    padding-bottom: 3.7vh;
-    box-shadow: 0px 3px rgb(0, 0, 0);
     font-size: 150%;
     text-align: center;
-}
-
-h1.topBarText {
-    color: white;
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    font-size: 200%;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 .row {
@@ -61,15 +56,15 @@ h1.topBarText {
 h1.perfil {
     text-align: center;
     font-size: 200%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-
-
 
 img.icon {
     width: 13vw;
     position: relative;
 
-    margin: auto auto auto;
+    margin: 20px auto 20px auto;
     border-radius: 100%;
 }
 
@@ -81,21 +76,18 @@ div.cardbox {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     margin: auto 1vw auto auto;
-      border-radius: 25px;
+    border-radius: 25px;
     box-shadow: 20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
 
-div.painelInfo {
-    background-color: black;
-    height: max-content;
 
-      border-radius: 25px;
-    margin: auto auto auto auto;
+div.buttonsLeft {
+    display: column;
+    justify-content: center;
+    align-items: center;
 }
-
 
 
 
@@ -124,35 +116,47 @@ div.bordertop {
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
+
 }
 
-div.borderleft {
-    position: relative;
-    width: 15vw;
-    height: auto;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
 
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.categoryBox {
+    width: 15%;
+    height: 99.5%;
+    border-color: transparent;
+    border-right-color: black;
+    border-style: solid;
+    border-width: 15 px;
+    /* topo | direita | inferior | esquerda */
 }
 
 ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
+    color: rgb(0, 0, 0);
     opacity: 0.4;
-    /* Firefox */
 }
 
-input.searchBar {
-    width: 80%;
-    height: 80%;
-    padding: 12px 20px;
-    margin: 1vh 1vw;
-    box-sizing: border-box;
-    font-size: xx-large;
-    background-color: green;
-    color: white;
-    content: "yo";
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 3%;
+    padding-right: 40%;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin: 1vw;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
 }
 
 @keyframes menuBoxAnimation {

@@ -44,6 +44,10 @@ h2.areadoclientehref {
     cursor: pointer;
 }
 
+h2.clientName {
+    margin: 0px 0px 0px 0px;
+}
+
 p#avaliacao {
     cursor: pointer;
     display: block;
@@ -128,7 +132,7 @@ div.profileBox {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     text-align: center;
     margin: auto 1vw auto 2vw;
     border-radius: 25px;
@@ -197,13 +201,17 @@ button.atualizarCards {
 
 
 h1.perfil {
+    text-align: center;
     font-size: 200%;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 p.info {
     font-size: 1em;
     text-align: center;
     text-overflow: clip;
+    margin-bottom: 2px;
 }
 
 
@@ -322,7 +330,7 @@ img.menuBoxIcon {
     border-radius: 100%;
     margin-right: 20px;
     margin-left: 15px;
-    margin-top: 3px;
+    margin-top: 1px;
     margin-bottom: 3px;
 }
 
@@ -332,7 +340,8 @@ div.menuBoxInfo {
 
 p.menuBoxInfo {
     /* topo | direita | inferior | esquerda */
-    margin: auto 50px auto 0;
-    text-align: start;
-    text-overflow: ellipsis;
+    font-size: 1em;
+    text-align: center;
+    text-overflow: clip;
+    margin-bottom: 5px;
 }
