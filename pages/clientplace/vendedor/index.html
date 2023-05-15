@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/png" href="../../../assets/icon.png">
-    <link rel="stylesheet" href="../../../buttons.css" media="screen">
 
+    <link rel="stylesheet" href="../../../buttons.css" media="screen">
     <link rel="stylesheet" href="../../../navBarStyle.css" media="screen">
     <link rel="stylesheet" href="./style.css" media="screen">
 
@@ -21,7 +21,7 @@
     <ul class="category">
         <p class="title">Produtos <br>do Futuro</p>
         <li><a href="../../../index.html">⏏ 『Home』</a></li>
-        <li><a>&#128100;『Área do Vendedor』</a></li>
+        <li><a>&#128100;『Área do Vendedor</a></li>
         <li><a href="../../../pages/contact/index.html">☎ 『Contato』</a></li>
         <li><a href="../../../pages/about/index.html"><b>?</b> 『Sobre』</a></li>
     </ul>
@@ -29,44 +29,41 @@
     <div class="row">
         <div class="border cardmenu">
 
-            <div class="border borderleft column">
-                <h1 class="painelDeControle">Painel de Controle</h1>
-
-                <div class="buttonsLayout">
-                    <button class="category center">Novos</button>
-                    <button class="category center">Minhas Vendas</button>
-                    <button class="category center">Em progresso</button>
-                    <button class="category center">Ánalise</button>
-                    <button class="category center"
-                        onclick="location.href='../../../pages/clientplace/vendedor/myaccount/index.html'">Minha conta</button>
+            <div class="categoryBox">
+                <div class="column">
+                    <h1 class="painelDeControle">Painel de Controle</h1>
+                    <button class="category"
+                        onclick="location.href='../../../pages/clientplace/vendedor/myaccount/index.html'">Minha
+                        conta</button>
+                    <button class="category">Novos anúncios</button>
+                    <button class="category">Minhas Vendas</button>
+                    <button class="category">Vendas Realizadas</button>
+                    <button class="category">Produtos em ánalise</button>
                 </div>
             </div>
-
-            <!--
-            Esses botões tão doendo a minha alma (Deixar igual do CLIENTPLACE-Client) (https://prnt.sc/p8voISal_55J)
-
-            E essas bordas, foram algo bem gambiarrento, se conseguirem mudar pra deixar mais alinhado e menos feio, (https://prnt.sc/48kIuLmDLYSi)
-             TODO
-             STYLEGROUP
-            -->
-
-
+            <!-- 
+                Esse input tá meio fein também, O MESMO VALE PRO INPUT DO CLIENTPLACE-VENDEDOR,
+                ambas as páginas devem conter o mesmo estilo geral, tendo apenas diferenças em nomes
+                de botões e esse tipo de coisa
+                TODO
+                STYLEGROUP
+             -->
             <div class="border bordertop">
-                <h1 class="topBarText">Novos Anúncios</h1>
+                <input type="text" autocomplete="off" name="text" class="input" placeholder="Pesquisar">
             </div>
         </div>
 
         <div class="cardbox">
 
             <h1 class="perfil">PERFIL</h1>
-            <img class="icon" src="https://raw.githubusercontent.com/PewDizinho/PI1/main/assets/fotosZoadas/fundadores/bryan.jpg"
+
+            <img class="icon"
+                src="https://raw.githubusercontent.com/PewDizinho/PI1/main/assets/fotosZoadas/fundadores/bryan.jpg"
                 alt="fundadores">
-            <h2 class="clientName">Bryan Alexandre </h1>
+
+            <h2 class="clientName">Bryan Alexandre</h1>
                 <p class="info">Vendas Realizadas: NaN</p>
                 <p class="info">Nota: NaN</p>
-                <p class="info">Faculdade: NaN</p>
-                <p class="info">Área: NaN</p>
-
         </div>
     </div>
 </body>
