@@ -16,6 +16,16 @@ ul.category {
 
 }
 
+img.navBarLogo {
+    width: 46%;
+    margin: auto 0px auto 0px;
+}
+
+div.topbartitle {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+}
 
 li {
     display: inline-block;
@@ -60,9 +70,8 @@ li:hover::before {
 
 p.title {
     color: white;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+
     font-size: 1em;
     font-weight: 900;
-    text-align: center;
+  
 }

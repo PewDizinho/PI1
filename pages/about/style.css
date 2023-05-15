@@ -5,9 +5,7 @@
     --button-txt-color: white;
     --hintTextColor: transparent;
 }
-*{
-    font-family: 'Montserrat', sans-serif;
-}
+
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
