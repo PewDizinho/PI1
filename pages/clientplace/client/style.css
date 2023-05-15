@@ -1,3 +1,57 @@
+
+body {
+    background-color: #1f1f1f;
+}
+
+section.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-box {
+    border-radius: 20px;
+    margin: 2%;
+    width: 65%;
+    height: 80vh;
+    background-color: #636060;
+}
+
+.background {
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 35vh;
+}
+
+.profile-img,
+.profile-back {
+    display: flex;
+}
+
+.profile-image {
+    border: 6px solid #636060;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 13%;
+    position: absolute;
+    width: 11%;
+    border-radius: 50%;
+}
+
+.info-text {
+    display: flex;
+    margin: 11% 0 10% 5%;
+    width: 15%;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+=======
 :root {
     /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
     --background-color: #1f1f1f;
@@ -117,8 +171,94 @@ div.bordertop {
     border-top-color: transparent;
     border-right-color: transparent;
 
+
+.profile-info {
+    display: flex;
+    height: auto;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
+.nome {
+    font-size: 19px;
+    text-align: center;
+}
+
+.profissao {
+    margin: 0;
+}
+
+.profesional-info {
+    margin: 5% 2%;
+    width: 70%;
+}
+
+.empresa {
+    align-items: center;
+    display: flex;
+    margin-left: 80%;
+}
+
+.empresa img {
+    width: 30%;
+    padding: 2%;
+    background-color: white;
+}
+.empresa p {
+    color: white;
+    padding: 8%;
+}
+.profile-side{
+    margin-top: 2%;
+}
+.profile-options {
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: 29vh;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.options-content a{
+    text-decoration: none;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.options-content a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hr-1{
+    width: 85%;
+}
+.profile-statistic {
+    font-weight: bold;
+    color: white;
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: 50vh;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+.statistic-text{
+    margin-left: 20px;
+    text-align: start;
+    padding: 3%;
+}
+.profile-feed {
+    display: flex;
+    border-radius: 20px;
+    margin-left: 5.5%;
+    width: 65%;
+    height: 80vh;
+    background-color: #636060;
+  }
 
 div.column {
     display: flex;
@@ -186,4 +326,5 @@ div.categoryBox {
     100% {
         box-shadow: 10px 10px;
     }
+
 }
