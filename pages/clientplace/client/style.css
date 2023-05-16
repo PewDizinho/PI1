@@ -1,189 +1,140 @@
-:root {
-    /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
-    --background-color: #1f1f1f;
-    --button-color: black;
-    --button-txt-color: white;
-    --hintTextColor: transparent;
-}
-
-#modoEscuro {
-    background-color: var(--button-color);
-    color: var(--button-txt-color);
-}
-
 body {
-    background-color: var(--background-color);
+    background-color: #1f1f1f;
 }
 
-h2.first {
-    margin-top: 4vh;
-
-}
-
-button.painelInfo {
-    color: rgb(0, 0, 0);
-    font-size: 100%;
-
-
-}
-
-h2.clientName {
-    font-size: larger;
-    margin: 0px;
-}
-
-p.info {
-    font-size: 1em;
-    text-align: center;
-    text-overflow: clip;
-    margin-bottom: 5px;
-}
-
-
-h1.painelDeControle {
-    color: white;
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    font-size: 150%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.row {
+section.profile {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-}
-
-h1.perfil {
-    text-align: center;
-    font-size: 200%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-img.icon {
-    width: 13vw;
-    position: relative;
-
-    margin: 20px auto 20px auto;
-    border-radius: 100%;
-}
-
-div.cardbox {
-    position: relative;
-    width: 20vw;
-    height: 70vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto 1vw auto auto;
-    border-radius: 25px;
-    box-shadow: 20px 20px rgb(0, 0, 0);
-    animation: boxShadowAnimation 0.375s forwards;
-}
-
-
-div.buttonsLeft {
-    display: column;
     justify-content: center;
-    align-items: center;
 }
 
-
-
-div.border {
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-width: 15 px;
-
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
-div.cardmenu {
-    position: relative;
-    width: 80vw;
+.profile-box {
+    border-radius: 20px;
+    margin: 2%;
+    width: 65%;
     height: 80vh;
-    background-color: rgba(255, 255, 255, 0.47);
+    background-color: #636060;
+}
+
+.background {
     display: flex;
-    flex-direction: row;
-    margin: 6vh 3vh auto auto;
-    animation: menuBoxAnimation 0.275s forwards;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 35vh;
 }
 
-div.bordertop {
-    position: relative;
-    width: 80vw;
-    height: 7vw;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-
-}
-
-
-div.column {
+.profile-img,
+.profile-back {
     display: flex;
-    flex-direction: column;
 }
 
-div.categoryBox {
+.profile-image {
+    border: 6px solid #636060;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 13%;
+    position: absolute;
+    width: 11%;
+    border-radius: 50%;
+}
+
+.info-text {
+    display: flex;
+    margin: 11% 0 10% 5%;
     width: 15%;
-    height: 99.5%;
-    border-color: transparent;
-    border-right-color: black;
-    border-style: solid;
-    border-width: 15 px;
-    /* topo | direita | inferior | esquerda */
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
 }
 
-::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 0.4;
+.profile-info {
+    display: flex;
+    height: auto;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-.input {
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    padding: 3%;
-    padding-right: 40%;
-    background-color: #ccc;
-    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: 300ms ease-in-out;
-    margin: 1vw;
+.nome {
+    font-size: 19px;
+    text-align: center;
 }
 
-.input:focus {
+.profissao {
+    margin: 0;
+}
+
+.profesional-info {
+    margin: 5% 2%;
+    width: 70%;
+}
+
+.empresa {
+    align-items: center;
+    display: flex;
+    margin-left: 80%;
+}
+
+.empresa img {
+    width: 30%;
+    padding: 2%;
     background-color: white;
-    transform: scale(1.05);
-    box-shadow: 13px 13px 100px #969696,
-        -13px -13px 100px #ffffff;
 }
-
-@keyframes menuBoxAnimation {
-    from {
-        width: 10vw;
-        height: 10vh;
-
-    }
-
-    to {
-        width: 80vw;
-        height: 80vh;
-    }
-
-
+.empresa p {
+    color: white;
+    padding: 8%;
 }
-
-@keyframes boxShadowAnimation {
-    0% {
-        box-shadow: 0px 0px;
-    }
-
-    70% {
-        box-shadow: 25px 25px;
-    }
-
-    100% {
-        box-shadow: 10px 10px;
-    }
+.profile-side{
+    margin-top: 2%;
 }
+.profile-options {
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: 29vh;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.options-content a{
+    text-decoration: none;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.options-content a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hr-1{
+    width: 85%;
+}
+.profile-statistic {
+    font-weight: bold;
+    color: white;
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: 50vh;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+.statistic-text{
+    margin-left: 20px;
+    text-align: start;
+    padding: 3%;
+}
+.profile-feed {
+    display: flex;
+    border-radius: 20px;
+    margin-left: 5.5%;
+    width: 65%;
+    height: 80vh;
+    background-color: #636060;
+ 
