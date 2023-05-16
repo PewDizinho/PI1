@@ -2,11 +2,6 @@
     Essa página é a página do erro 404, se você estudante de TI não sabe o que é erro 404, se mata 
 -->
 
-<!-- 
-    Essa página tá meio desatualizada, se vocês quiserem re-criar ela do zero, a vontade
-    TODO
-    STYLEGROUP
- -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,107 +11,57 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="img/png" href="PI1/assets/logoopet.png">
+    <link rel="icon" type="img/png" href="../PI1/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdd389d174.js" crossorigin="anonymous"></script>
+
     <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body {
-            margin: 0;
-            padding: 0;
-            background-image: linear-gradient(to bottom, #105004, #10a335);
-            background-attachment: fixed;
+            background-color: #1f1f1f;
         }
 
-        p {
-            margin: auto;
-        }
-
-        p.head {
+        .full-content {
             text-align: center;
-            font-size: 300%;
-
             color: white;
         }
 
-        div.backgroundhead {
-            background-color: black;
-            width: 20vw;
-            height: fit-content;
-            right: 0;
-            left: 0;
-            margin: 1% auto 1% auto;
-            border-radius: 10px;
-            z-index: 0;
+        .red {
+            color: red;
         }
 
-        p.title {
-
-            text-align: center;
-            font-size: 150%;
+        .full-content img {
+            width: 30%;
+            display: inline-flex;
+            margin: 2%;
         }
-
-        p.message {
-            text-align: center;
-            margin-top: 1%;
+        .icon{
+            color: white;
         }
-
-        .img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 2%;
-            width: 30vw;
-            border-radius: 100%;
+        i{
+            color: white;
         }
-
-        .backbutton {
-            width: 150px;
-            height: 50px;
-            border: none;
-            outline: none;
-            color: #fff;
-            background: #000000;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-            justify-content: right;
-            line-height: 12px;
-            margin-left: auto;
-            margin-right: auto;
-            cursor: pointer;
-            position: absolute;
-            margin-top: 1%;
-            right: 0;
-            left: 0;
-        }
-
-
-        .backbutton:active {
-            color: #000
-        }
-
-        .backbutton:active:after {
-            background: transparent;
-        }
-
-        .backbutton:hover:before {
-            opacity: 1;
-        }
+       
     </style>
     <title>Produtos do Futuro</title>
 </head>
 
 <body>
-
-    <div class="backgroundhead">
-        <p class="head">404</p>
+    <div class="full-content">
+        <h1>Não sabemos como você veio parar aqui</h1>
+        <h2>estamos trabalhando para resolver isso</h2>
+        <h2 class="red">404</h2>
+        <a href=".//index.html">
+            <img src=".//assets/icon.png" alt="">
+        </a>
+        <h6>Retorne para o início apertando em nossa logo</h6>
     </div>
-
-
-    <p class="title">Página Inexistente!</p>
-    <p class="message">Não sabemos como você veio parar aqui, mas já que está aqui, aprecie essa imagem de um dos nossos
-        criadores</p>
-    <img class="img" src="https://pewdizinho.github.io/PI1/assets/fotosZoadas/trobojadeadpool.png"
-        alt="trobojadeadpool">
-    <button onclick="location.href='/PI1/index.html'" class="backbutton">Inicio</button>
+   
 </body>
 
 
