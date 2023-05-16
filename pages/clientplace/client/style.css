@@ -8,7 +8,7 @@ section.profile {
     justify-content: center;
 }
 
-* {
+.font {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -137,4 +137,4 @@ section.profile {
     width: 65%;
     height: 80vh;
     background-color: #636060;
- 
+}

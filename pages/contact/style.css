@@ -45,7 +45,58 @@ div.emailDiv {
     justify-content: center;
     align-items: center;
 }
-
+.contato{
+    margin: 0 auto;
+    width: 50%;
+}
+.contato input{
+    margin: 0 auto;
+}
+input[type="submit"]{
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+form label, form p{
+    color: white;
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 4px 147px;
+}
+.padrao{
+    display: block;
+    margin: 0 0 20px 40px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+}
+.caixac{
+    margin: 20px 0 0 40px;
+}
+.enviar{
+  margin: 20px 0 0 40px;
+  width: 40%;  
+  padding: 15px 0;
+  border-radius: 10px;
+  background: #554e4e;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  transition: 1s all;
+  cursor: pointer;
+}
+.enviar:hover{
+ background: rgb(255, 123, 0); 
+ transform: scale(1.1);  
+}
 
 
 @keyframes popUpAnimation {
