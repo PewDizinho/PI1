@@ -347,6 +347,15 @@ p.menuBoxInfo {
     margin-bottom: 5px;
 }
 
+.navbar {
+    display: none;
+}
+.navbar-toggler {
+    display: none;
+}
+.navbar-brand {
+    display: none;
+}
 /*MEDIA SCREENS*/
 
 @media screen and (max-width:1020px) {
@@ -357,6 +366,7 @@ p.menuBoxInfo {
     div.categoryBox {
         width: 96%;
         margin-bottom: 5px;
+    
     }
     div.column {
         display: flex;
@@ -366,5 +376,39 @@ p.menuBoxInfo {
     }
     h2.category {
         margin-bottom: 0em;
+    }
+}
+
+@media screen and (max-width:980px) {
+    
+    h2.category {
+        position: relative;
+        left: 5px;
+    }
+    
+    .navbar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 60%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 9999;
+    }
+    .navbar-menu {
+       z-index: 9999;
+    }
+    .navbar-nav {
+        align-items: center;
+    }
+}
+@media screen and (max-width:570px) {
+    .navbar-nav {
+        align-items: start;
     }
 }
