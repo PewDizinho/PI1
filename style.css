@@ -395,8 +395,8 @@ p.menuBoxInfo {
     .navbar-toggler {
         display: block;
         position: absolute;
-        top: 60%;
-        right: 20px;
+        top: 67%;
+        right: 4px;
         transform: translateY(-50%);
         z-index: 9999;
     }
@@ -405,6 +405,8 @@ p.menuBoxInfo {
     }
     .navbar-nav {
         align-items: center;
+        background-color: #5c5b5b;
+        border-radius: 12px;
     }
 }
 @media screen and (max-width:570px) {
