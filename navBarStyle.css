@@ -73,5 +73,12 @@ p.title {
 
     font-size: 1em;
     font-weight: 900;
-  
+
+}
+
+@media screen and (max-width:980px) {
+    ul.category {
+        display: none;
+    }
+
 }

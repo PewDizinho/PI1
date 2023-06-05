@@ -369,6 +369,10 @@ p.menuBoxInfo {
 /*MEDIA SCREENS*/
 
 @media screen and (max-width:980px) {
+    body {
+        margin: 5px;
+    }
+
     .row {
         display: flex;
         flex-direction: column;

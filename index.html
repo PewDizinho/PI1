@@ -14,6 +14,7 @@
     <script src="bootstrap/js/bootstrap.js"></script>
 
     <link rel="stylesheet" href="./navBarStyle.css" media="screen">
+    <link rel="stylesheet" href="./navBarMobile.css" media="screen">
     <link rel="stylesheet" href="./buttons.css" media="screen">
     <link rel="stylesheet" href="./style.css" media="screen">
 
@@ -77,64 +78,32 @@
 
                 <button class="atualizarCards" id="gerarCardButton" onclick="generateCard()">GERAR CARDS</button>
 
-                <!-- <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img class="menuBoxIcon"
-                                src="https://raw.githubusercontent.com/PewDizinho/PI1/main/assets/fotosZoadas/fundadores/Paulo.jpg"
-                                alt="userIcon">
-                            <div class="menuBoxInfo">
-                                <p class="menuBoxInfo txtShadow">Paulo Eduardo Konopka</p>
-                                <p class="menuBoxInfo txtShadow">Programador do mês</p>
-                                <p class="menuBoxInfo txtShadow">Análise e Desenvolvimento de Sistemas</p>
-                            </div>
-                            <div class="spacer"></div>
-                            <div class="menuBoxInfo column">
-                                <p class="menuBoxInfo txtShadow">Vendas bem sucedidas desse mês: 69</p>
-                                <p class="menuBoxInfo txtShadow">Total de vendas bem sucedidas realizadas: 169</p>
-                                <p class="menuBoxInfo txtShadow">Nota: ★★★☆☆☆</p>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <img class="menuBoxIcon"
-                                src="https://raw.githubusercontent.com/PewDizinho/PI1/main/assets/fotosZoadas/fundadores/Paulo.jpg"
-                                alt="userIcon">
-                            <div class="menuBoxInfo">
-                                <p class="menuBoxInfo txtShadow">"Sou um entusiasta em programação, tendo conhecimento
-                                    em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e
-                                    design e eu creio que mesmo que eu continue digitando e faça um texto de
-                                    apresentação gigante ele ainda não vai quebrar mas para garantir poderemos deixar um
-                                    limite de caractere pra essa mensagem, o pessoal de responsividade tem que ver isso
-                                    depois"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
             </div>
         </div>
-
-        <!--<div class="profileBox">
-
-            <h1 class="perfil center">PERFIL</h1>
-            <img class="icon" src="https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/Paulo.jpg"
-                alt="fundadores">
-            <h2 class="clientName">Paulo E. Konopka</h1>
-                <p class="info">Compras Realizadas: NaN</p>
-                <p class="info">Anuncios Realizados: NaN</p>
-                <p class="info">Nota: NaN</p>
-                <p class="info">Interesses: NaN</p>
-                <h2 class="areadoclientehref" onclick="location.href='./pages/clientplace/index.html'">[Área do
-                    Cliente]</h2>-->
-        <!-- Esse cartão, os "P" dentro dele não tão respeitando a div e saindo pra fora quando a tela do pc é menor
-                        TODO
-                        RESPONSIVIDADE
-                    -->
-
     </div>
     </div>
     </div>
+
+
+    <div id="circularMenu" class="circular-menu">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <i class="fa fa-plus"></i>
+         
+        </a>
+
+        <menu class="items-wrapper">
+            <a href="./pages/clientplace/index.html" class="menu-item">&#128100;</a>
+            <a href="#" class="menu-item">☎</a>
+            <a href="#" class="menu-item">❓</a>
+            <a href="#" class="menu-item">⏏</a>
+        </menu>
+
+    </div>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
