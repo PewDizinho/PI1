@@ -1,28 +1,30 @@
-
-
 button {
     --button_radius: 0.70em;
     --button_color: #e8e8e8;
     --button_outline_color: #000000;
-    font-size: 17px;
+    font-size: 0.91rem;
     font-weight: bold;
     border: none;
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
 }
 
-.category {
+button.category {
     display: block;
     box-sizing: border-box;
     border: 2px solid var(--button_outline_color);
     border-radius: var(--button_radius);
+    width: 100%;
+    height: max-content;
     padding: 0.75em;
     background: var(--button_color);
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
     transition: transform 0.1s ease;
     margin-top: 0.3em;
+
 }
+
 .category-mobile {
     display: block;
     box-sizing: border-box;
@@ -43,13 +45,22 @@ button.category:hover {
 button.category:active {
     transform: translateY(0);
 }
-@media screen and (max-width:1020px) {
-    .category {
-        margin-top: 10px;
-    }
-}
+
+
 @media screen and (max-width:980px) {
-    .category {
-        display: none;
+    div.category {
+
+
+
+        width: 70%;
+        margin: auto auto auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
     }
+
+
+
 }

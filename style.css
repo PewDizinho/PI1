@@ -31,11 +31,13 @@ h2.menuBoxTitle {
 
 h2.category {
     margin-bottom: 0.8em;
+    margin-top: 0.5em;
     color: white;
     padding-bottom: 0.5em;
     box-shadow: 0px 3px rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.4rem;
 }
 
 
@@ -75,14 +77,14 @@ div.column {
 }
 
 div.categoryBox {
-    width: 15%;
-    /*height: 70vh;*/
+    width: 17%;
+    height: max-content;
     background-color: rgba(255, 255, 255, 0.47);
     border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 15 px;
     /* topo | direita | inferior | esquerda */
-    margin: auto auto auto 2%;
+    margin: 0px 2% auto 2%;
 
 }
 
@@ -94,7 +96,7 @@ div.menuBox {
     border-style: solid;
     border-width: 15 px;
     display: flex;
-    margin: auto auto auto auto;
+    margin: auto auto auto 0px;
 }
 
 div.menuBoxInside {
@@ -339,6 +341,11 @@ div.menuBoxInfo {
     margin: auto 0 auto 0;
 }
 
+div.category {
+    justify-content: center;
+    align-items: center;
+}
+
 p.menuBoxInfo {
     /* topo | direita | inferior | esquerda */
     font-size: 1em;
@@ -350,67 +357,49 @@ p.menuBoxInfo {
 .navbar {
     display: none;
 }
+
 .navbar-toggler {
     display: none;
 }
+
 .navbar-brand {
     display: none;
 }
+
 /*MEDIA SCREENS*/
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:980px) {
+    body {
+        margin: 5px;
+    }
+
     .row {
         display: flex;
         flex-direction: column;
     }
+
     div.categoryBox {
         width: 96%;
         margin-bottom: 5px;
-    
+
     }
+
+    div.menuBox {
+        width: 96%;
+        margin: auto auto auto auto;
+    }
+
     div.column {
         display: flex;
-        flex-direction: row;
+
         gap: 10px;
-        
+
     }
-    h2.category {
-        margin-bottom: 0em;
-    }
+
 }
 /*adicionar isso a partir de 890px*/
 @media screen and (max-width:980px) {
-    
     h2.category {
-        position: relative;
-        left: 5px;
-    }
-    
-    .navbar {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 50px;
-    }
-    .navbar-toggler {
-        display: block;
-        position: absolute;
-        top: 67%;
-        right: 4px;
-        transform: translateY(-50%);
-        z-index: 9999;
-    }
-    .navbar-menu {
-       z-index: 9999;
-    }
-    .navbar-nav {
-        align-items: center;
-        background-color: #5c5b5b;
-        border-radius: 12px;
-    }
-}
-@media screen and (max-width:570px) {
-    .navbar-nav {
-        align-items: start;
+        margin-bottom: 0em;
     }
 }
