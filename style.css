@@ -396,6 +396,9 @@ p.menuBoxInfo {
 
     }
 
+}
+/*adicionar isso a partir de 890px*/
+@media screen and (max-width:980px) {
     h2.category {
         margin-bottom: 0em;
     }
