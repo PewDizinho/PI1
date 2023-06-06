@@ -47,7 +47,7 @@ div.emailDiv {
 }
 .contato{
     margin: 0 auto;
-    width: 50%;
+    width: 100vw;
 }
 .contato input{
     margin: 0 auto;
@@ -67,14 +67,26 @@ form label, form p{
     color: white;
     display: block;
     font-size: 20px;
-    margin: 20px 0 4px 147px;
+    margin: 20px 0vw 5px 0px;
+    position: relative;
+    left: -87px;
+    text-align: center;
+}
+#email {
+    left: -142px;
+}
+#telefone {
+    left: -132px;
+}
+#mensagem {
+    left: -122px;
 }
 .padrao{
     display: block;
     margin: 0 0 20px 40px;
     padding: 10px 25px;
     border-radius: 10px;
-    width: 50%;
+    width: 300px;
     justify-content: center;
 }
 .caixac{
@@ -82,7 +94,7 @@ form label, form p{
 }
 .enviar{
   margin: 20px 0 0 40px;
-  width: 40%;  
+  width: 200px;  
   padding: 15px 0;
   border-radius: 10px;
   background: #554e4e;
