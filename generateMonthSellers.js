@@ -152,12 +152,14 @@ class SellerOfTheMonthCard {
         infoRight.appendChild(stars);
         flipCardFront.appendChild(infoLeft);
         flipCardFront.appendChild(spacer);
+
         flipCardFront.appendChild(infoRight);
 
 
 
 
         flipCardback.appendChild(imgBack);
+
         flipCardback.appendChild(aboutMe)
 
         flipCardInner.appendChild(flipCardFront);

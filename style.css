@@ -272,6 +272,7 @@ p.info {
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family: sans-serif;
+    font-size: 0.9rem;
 }
 
 
@@ -314,6 +315,7 @@ p.info {
     border: 1px solid coral;
     border-radius: 1rem;
     cursor: pointer;
+
 }
 
 .flip-card-front {
@@ -329,6 +331,12 @@ p.info {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
+
+
+}
+
+.flip-card-back p.menuBoxInfo {
+    margin: 25px;
 }
 
 img.menuBoxIcon {
@@ -340,7 +348,7 @@ img.menuBoxIcon {
 }
 
 div.menuBoxInfo {
-    margin: auto 0 auto 0;
+    margin: auto 15px auto 0;
 }
 
 div.category {
@@ -353,7 +361,8 @@ p.menuBoxInfo {
     font-size: 1em;
     text-align: center;
     text-overflow: clip;
-    margin-bottom: 5px;
+    margin: 0px;
+
 }
 
 .navbar {
@@ -399,9 +408,26 @@ p.menuBoxInfo {
     }
 
 }
+
 /*adicionar isso a partir de 890px*/
 @media screen and (max-width:980px) {
     h2.category {
         margin-bottom: 0em;
     }
+}
+
+@media screen and (max-height:700px) {
+    .flip-card {
+
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:572px) {
+    .flip-card {
+
+        font-size: 0.5rem;
+    }
+
 }
