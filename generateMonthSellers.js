@@ -69,7 +69,7 @@ const monthSellers = [
         name: "João Trizotte",
         category: "programmer",
         curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador",
+        title: "Programador do Mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
@@ -91,18 +91,21 @@ function filterCategory(index) {
     }
     for (let seller of monthSellers) {
         if (seller.category.toLowerCase() == categories[index] || index == 6) {
-
+            document.getElementById("menuBoxTitle").innerText = seller.title;
             document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard(seller).newCard);
+            if (index == 6) {
+
+                document.getElementById("menuBoxTitle").innerText = "Vendedores do Mês";
+            }
         }
     }
     if (parentElement.firstChild == null) {
         document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard().emptyCard);
-
+        document.getElementById("menuBoxTitle").innerText = "Não Localizado";
     }
 }
 function generateCard() {
     for (let seller of monthSellers) {
-        document.getElementById("gerarCardButton").style.display = "none";
         const container = document.getElementById("menuBoxInside");
         container.appendChild(new SellerOfTheMonthCard(seller).newCard);
     }
@@ -246,14 +249,14 @@ class SellerOfTheMonthCard {
         name.innerText = "Infelizmente não possuímos um estudante dessa área [Card in WIP]";
 
         name.className = "menuBoxInfo";
-       
+
         const spacer = document.createElement("div");
         spacer.className = "spacer";
         infoLeft.appendChild(name);
-       
+
         card.appendChild(infoLeft);
         card.appendChild(spacer);
-     
+
 
         return card;
     }

@@ -30,7 +30,7 @@
 </head>
 
 
-<body>
+<body onload="generateCard()">
 
     <ul class="category">
         <div class="topbartitle">
@@ -76,12 +76,11 @@
 
         <div class="menuBox column">
             <div class="menuBoxTitle">
-                <h2 class="menuBoxTitle center txtShadow">Vendedores do Mês</h2>
+                <h2 class="menuBoxTitle center txtShadow" id="menuBoxTitle">Vendedores do Mês</h2>
             </div>
-            <div id="menuBoxInside" class="menuBoxInside">
+            <div id="menuBoxInside" class="menuBoxInside" >
 
-                <button class="atualizarCards" id="gerarCardButton" onclick="generateCard()">GERAR CARDS</button>
-
+           
             </div>
         </div>
     </div>

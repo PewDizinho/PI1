@@ -17,18 +17,21 @@
 body {
     background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
 h1.title {
     color: white;
+    margin: 30px 0px 30px 200px;
+    
 }
 
 h2.menuBoxTitle {
     color: white;
     padding-bottom: 1vw;
     box-shadow: 0px 3px rgb(0, 0, 0);
-    margin-bottom: 5px;
+    margin: 1vw;
 }
 
 h2.category {
@@ -106,7 +109,8 @@ div.menuBoxInside {
     width: 100%;
     height: 100%;
     margin: 0px 1px 1px 0px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     flex-wrap: wrap;
 }
 
@@ -169,38 +173,6 @@ img.icon {
     border-radius: 100%;
 }
 
-button.atualizarCards {
-    align-items: center;
-    background: #000020;
-    border: 0;
-    border-radius: 8px;
-    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    font-size: 1rem;
-    justify-content: center;
-    line-height: 1.5rem;
-    padding: 15px;
-    position: relative;
-    text-align: left;
-    margin: auto;
-    width: max-content;
-
-}
-
-.atualizarCards:hover {
-    background: #020281;
-    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
-}
-
-@media (min-width: 768px) {
-    .atualizarCards {
-        padding: 24px;
-    }
-}
 
 
 
@@ -428,7 +400,7 @@ p.menuBoxInfo {
 @media screen and (max-width:572px) {
     .flip-card {
 
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
 }
