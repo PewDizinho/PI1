@@ -90,10 +90,10 @@ function filterCategory(index) {
         parentElement.removeChild(parentElement.firstChild);
     }
     for (let seller of monthSellers) {
-        if (seller.category.toLowerCase() == categories[index] || index == 6) {
+        if (seller.category.toLowerCase() == categories[index] || index > categories.length) {
             document.getElementById("menuBoxTitle").innerText = seller.title;
             document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard(seller).newCard);
-            if (index == 6) {
+            if (index > categories.length) {
 
                 document.getElementById("menuBoxTitle").innerText = "Vendedores do Mês";
             }
