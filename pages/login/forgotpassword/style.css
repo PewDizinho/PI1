@@ -1,0 +1,150 @@
+:root {
+    /*Defina as variaveis aqui para as cores padrões (WHITE MODE) para a página*/
+    --background-color: #1f1f1f;
+    --button-color: black;
+    --button-txt-color: white;
+    --hintTextColor: transparent;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+h1.titleCentral {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+div.caixaCentral {
+    background-color: #272727;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60vh;
+    width: 50vw;
+    margin: 5% auto auto auto;
+    padding: 5%;
+    box-shadow: 0 0 1px #fff, 0 0 2.5px #fff, 0 0 5px #0bca24, 0 0 7.5px #000747,
+        0 0 10px #0b37ca, 0 0 25px #0bca24;
+
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #1f1f1f;
+}
+
+
+aside.rightSide {
+    height: 90%;
+    width: 40%;
+}
+
+main.inputs {
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    height: 10%;
+
+    margin-top: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+}
+
+
+/**/
+
+
+
+/***/
+.btn {
+    outline: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 5%;
+
+}
+
+.btn::before {
+    content: '';
+
+    left: 5px;
+    top: 5px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn::after {
+    content: '';
+
+    right: 5px;
+    bottom: 5px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 10px rgb(184, 184, 184);
+    transform: translateY(-5px);
+}
+
+.btn:hover::after, .btn:hover::before {
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+}
