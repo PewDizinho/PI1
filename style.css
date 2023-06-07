@@ -16,7 +16,9 @@
 
 body {
     background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 h1.title {
     color: white;

@@ -12,7 +12,8 @@ ul.category {
     -webkit-animation: blink 0.7s infinite alternate;
     animation: blink 0.7s infinite alternate;
     background-color: #111;
-
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
 
 }
 
@@ -40,6 +41,7 @@ li a {
     text-align: center;
     padding: 1vw 2vh;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
     margin-right: 1vw;
 }
 
@@ -70,11 +72,14 @@ li:hover::before {
 
 p.title {
     color: white;
-
-    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
     font-weight: 900;
-
+    margin: auto;
+    overflow: visible;
+    white-space: nowrap;
 }
+
 
 @media screen and (max-width:980px) {
     ul.category {
