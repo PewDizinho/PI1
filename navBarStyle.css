@@ -7,8 +7,8 @@ ul.category {
     justify-content: space-between;
     border-radius: 25px;
     color: #fff;
-    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0bca24, 0 0 15px #0bca24,
-        0 0 20px #0bca24, 0 0 25px #0bca24;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #006463, 0 0 15px #004443,
+        0 0 20px #004443, 0 0 25px #004443;
     -webkit-animation: blink 0.7s infinite alternate;
     animation: blink 0.7s infinite alternate;
     background-color: #111;

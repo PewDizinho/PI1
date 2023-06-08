@@ -9,7 +9,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
@@ -22,7 +21,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
@@ -35,7 +33,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
@@ -48,7 +45,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
@@ -61,7 +57,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
@@ -74,7 +69,6 @@ const monthSellers = [
         stars: "★★★☆☆☆",
         sellsThisMonth: "NaN",
         sellAllTime: "NaN",
-        aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
 ]
@@ -84,24 +78,25 @@ const monthSellers = [
 
 function filterCategory(index) {
     const categories = ["programmer", "design", "marketing", "nutrition", "audiosvisuais", "publicity"];
+    const categoriesNames = ["Programador", "Designer", "Marketing", "Nutricionistas", "Audios Visuais", "Publicitários"];
     const parentElement = document.getElementById('menuBoxInside');
 
     while (parentElement.firstChild) {
         parentElement.removeChild(parentElement.firstChild);
     }
     for (let seller of monthSellers) {
+        document.getElementById("menuBoxTitle").innerText = categoriesNames[index];
         if (seller.category.toLowerCase() == categories[index] || index > categories.length) {
-            document.getElementById("menuBoxTitle").innerText = seller.title;
             document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard(seller).newCard);
             if (index > categories.length) {
 
-                document.getElementById("menuBoxTitle").innerText = "Vendedores do Mês";
+                document.getElementById("menuBoxTitle").innerText = "Vendedores";
             }
         }
     }
     if (parentElement.firstChild == null) {
         document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard().emptyCard);
-        document.getElementById("menuBoxTitle").innerText = "Não Localizado";
+
     }
 }
 function generateCard() {
@@ -124,7 +119,6 @@ class SellerOfTheMonthCard {
         const infoLeft = document.createElement("div");
         const infoRight = document.createElement("div");
         const spacer = document.createElement("div");
-        const aboutMe = document.createElement("p");
         const name = document.createElement("p");
         const title = document.createElement("p");
         const area = document.createElement("p");
@@ -137,8 +131,7 @@ class SellerOfTheMonthCard {
 
 
 
-        aboutMe.innerText = `"${this.seller.aboutme}"`;
-        name.innerText = this.seller.name;
+         name.innerText = this.seller.name;
         title.innerText = this.seller.title;
         area.innerText = this.seller.curso;
         stars.innerText = this.seller.stars;
@@ -154,7 +147,6 @@ class SellerOfTheMonthCard {
         title.className = "menuBoxInfo txtShadow";
         name.className = "menuBoxInfo txtShadow";
         area.className = "menuBoxInfo txtShadow";
-        aboutMe.className = "menuBoxInfo txtShadow";
         university.className = "menuBoxInfo txtShadow";
         stars.className = "menuBoxInfo txtShadow";
         sellsThisMonth.className = "menuBoxInfo txtShadow";
@@ -184,8 +176,7 @@ class SellerOfTheMonthCard {
 
         flipCardback.appendChild(imgBack);
 
-        flipCardback.appendChild(aboutMe)
-
+      
         flipCardInner.appendChild(flipCardFront);
         flipCardInner.appendChild(flipCardback);
         card.appendChild(flipCardInner);
