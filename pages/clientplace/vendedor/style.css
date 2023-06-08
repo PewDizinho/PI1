@@ -15,175 +15,150 @@ body {
     background-color: var(--background-color);
 }
 
-h2.first {
-    margin-top: 4vh;
-
-}
-
-button.painelInfo {
-    color: rgb(0, 0, 0);
-    font-size: 100%;
-
-
-}
-
-h2.clientName {
-    font-size: larger;
-    margin: 0px;
-}
-
-p.info {
-    font-size: 1em;
-    text-align: center;
-    text-overflow: clip;
-    margin-bottom: 5px;
-}
-
-
-h1.painelDeControle {
-    color: white;
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    font-size: 150%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-h1.perfil {
-    text-align: center;
-    font-size: 200%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-img.icon {
-    width: 13vw;
-    position: relative;
-
-    margin: 20px auto 20px auto;
-    border-radius: 100%;
-}
-
-div.cardbox {
-    position: relative;
-    width: 20vw;
-    height: 70vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto 1vw auto auto;
-    border-radius: 25px;
-    box-shadow: 20px 20px rgb(0, 0, 0);
-    animation: boxShadowAnimation 0.375s forwards;
-}
-
-
-div.buttonsLeft {
-    display: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-div.border {
+main, div.side {
+    background-color: rgba(255, 255, 255, 0.47);
     border-color: rgb(0, 0, 0);
     border-style: solid;
-    border-width: 15 px;
-
+    height: 40vw;
 }
 
-div.cardmenu {
-    position: relative;
-    width: 80vw;
-    height: 80vh;
-    background-color: rgba(255, 255, 255, 0.47);
-    display: flex;
-    flex-direction: row;
-    margin: 6vh 3vh auto auto;
-    animation: menuBoxAnimation 0.275s forwards;
+main {
+    margin-left: 30px;
+    width: 70%;
 }
 
-div.bordertop {
-    position: relative;
-    width: 80vw;
-    height: 7vw;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-
-}
-
-
-div.column {
+div.side {
+    margin-right: 30px;
+    width: 22%;
+    justify-content: start;
     display: flex;
     flex-direction: column;
 }
 
-div.categoryBox {
-    width: 15%;
-    height: 99.5%;
-    border-color: transparent;
-    border-right-color: black;
+
+div.mainBase {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+div.bottomScreen {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
-    border-width: 15 px;
-    /* topo | direita | inferior | esquerda */
+    height: 40vw;
 }
 
-::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 0.4;
+div.head {
+    height: 15vw;
+    position: relative;
 }
 
-.input {
+div.leftInfo {
+    margin-left: 1px;
+    width: 50%;
+    height: 100%;
+
+}
+
+div.rightInfo {
+    margin-left: 10px;
+    width: 50%;
+    height: 100%;
+
+
+}
+
+div.bottomPart {
+    display: flex;
+    flex-direction: row;
+}
+
+img.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+}
+
+img.pfp {
+    width: 15%;
+    border-radius: 10000px;
+    z-index: 10;
+    position: absolute;
+    margin: auto auto auto auto;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+
+h1, h2 {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+
+
+h2.estatisticas {
+    font-family: 'Courier New', monospace;
+}
+
+.estatisticas {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+/**/
+
+div.redesSociais {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    align-self: center;
+}
+
+/**/
+
+.twitter, .github, .youtube {
+
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
     border: none;
-    outline: none;
-    border-radius: 15px;
-    padding: 3%;
-    padding-right: 40%;
-    background-color: #ccc;
-    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: 300ms ease-in-out;
-    margin: 1vw;
-}
+    font-weight: 600;
+    display: flex;
 
-.input:focus {
-    background-color: white;
-    transform: scale(1.05);
-    box-shadow: 13px 13px 100px #969696,
-        -13px -13px 100px #ffffff;
-}
-
-@keyframes menuBoxAnimation {
-    from {
-        width: 10vw;
-        height: 10vh;
-
-    }
-
-    to {
-        width: 80vw;
-        height: 80vh;
-    }
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
 
 
 }
 
-@keyframes boxShadowAnimation {
-    0% {
-        box-shadow: 0px 0px;
-    }
+.svgIcon {
+    width: 25px;
+    transition-duration: .3s;
+}
 
-    70% {
-        box-shadow: 25px 25px;
-    }
-
-    100% {
-        box-shadow: 10px 10px;
-    }
+.svgIcon path {
+    fill: white;
 }
