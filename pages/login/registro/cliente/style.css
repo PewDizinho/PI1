@@ -199,10 +199,9 @@ input {
 
 @media (max-width: 1024px) { 
     
-    h2 {
+    h2.pfp {
         margin-right: 1em;
-        margin-bottom: -.5em;
-        bottom: 52em;
+        font-size: 3vh;
     }
 
     div.caixaCentral {
@@ -213,10 +212,11 @@ input {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10rem;
+    text-align: center;
    }
 
    input {
-    margin-left: 15vh;
+    margin-left: 4.5em;
     font-size: 20px;
    }
 
@@ -231,7 +231,7 @@ input {
    }
    
    img {
-    margin-right: 1.1em;
+    margin-right: 1.7em;
    }
 
 }
