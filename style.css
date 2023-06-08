@@ -6,13 +6,10 @@
     --hintTextColor: transparent;
 }
 
-
-
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
 }
-
 
 body {
     background-color: var(--background-color);
@@ -47,8 +44,6 @@ h2.category {
     font-size: 1.4rem;
 }
 
-
-
 h2.areadoclientehref {
     cursor: pointer;
 }
@@ -70,14 +65,10 @@ p#avaliacao {
     width: 10vw;
     margin: 1vw auto 0 auto;
 }
-
 button.category:hover {
     width: 11vw;
     height: 2vw;
 } */
-
-
-
 div.column {
     display: flex;
     flex-direction: column;
@@ -92,7 +83,6 @@ div.categoryBox {
     border-width: 15 px;
     /* topo | direita | inferior | esquerda */
     margin: 0px 2% auto 2%;
-
 }
 
 div.menuBox {
@@ -118,7 +108,6 @@ div.menuBoxInside {
 
 div.menuBoxInside::-webkit-scrollbar {
     width: 8px;
-
 }
 
 div.menuBoxInside::-webkit-scrollbar-track {
@@ -142,7 +131,6 @@ div.profileBox {
     background-color: white;
     display: flex;
     flex-direction: column;
-
     text-align: center;
     margin: auto 1vw auto 2vw;
     border-radius: 25px;
@@ -159,10 +147,6 @@ div.menuBoxCard {
     height: 25%;
 }
 
-
-
-
-
 a.areadoclientehref {
     color: black;
 }
@@ -174,9 +158,6 @@ img.icon {
     margin: auto auto auto;
     border-radius: 100%;
 }
-
-
-
 
 h1.perfil {
     text-align: center;
@@ -191,7 +172,6 @@ p.info {
     text-overflow: clip;
     margin-bottom: 2px;
 }
-
 
 .spacer {
     flex: 1;
@@ -234,11 +214,7 @@ p.info {
     }
 }
 
-
 /* TESTE DE BOTÃO */
-
-
-
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -248,7 +224,6 @@ p.info {
     font-family: sans-serif;
     font-size: 0.9rem;
 }
-
 
 .flip-card-inner {
     position: relative;
@@ -263,8 +238,8 @@ p.info {
     transform-style: preserve-3d;
 }
 
-
-.flip-card-front{
+.flip-card-front,
+.flip-card-back {
     -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -281,20 +256,17 @@ p.info {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid coral;
     border-radius: 1rem;
     cursor: pointer;
     word-wrap: break-word;
-
 }
 
 .flip-card-front {
     background: linear-gradient(120deg, #05D46E 60%, #04c364 88%,
-    #04ae59 40%);
+            #04ae59 40%);
     color: rgb(255, 255, 255);
 }
-
-
 
 img.menuBoxIcon {
     border-radius: 100%;
@@ -319,7 +291,6 @@ p.menuBoxInfo {
     text-align: start;
     text-overflow: clip;
     margin: 0px;
-
 }
 
 .navbar {
@@ -335,7 +306,6 @@ p.menuBoxInfo {
 }
 
 /*MEDIA SCREENS*/
-
 @media screen and (max-width:980px) {
     body {
         margin: 5px;
@@ -349,7 +319,6 @@ p.menuBoxInfo {
     div.categoryBox {
         width: 96%;
         margin-bottom: 5px;
-
     }
 
     div.menuBox {
@@ -359,11 +328,8 @@ p.menuBoxInfo {
 
     div.column {
         display: flex;
-
         gap: 10px;
-
     }
-
 }
 
 /*adicionar isso a partir de 890px*/
@@ -375,15 +341,12 @@ p.menuBoxInfo {
 
 @media screen and (max-height:700px) {
     .flip-card {
-
         font-size: 0.8rem;
     }
-
 }
 
 @media screen and (max-width:572px) {
     .flip-card {
-
         font-size: 0.7rem;
     }
 

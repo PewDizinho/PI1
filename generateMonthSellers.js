@@ -115,7 +115,7 @@ class SellerOfTheMonthCard {
         const card = document.createElement("div");
         const flipCardInner = document.createElement("div");
         const flipCardFront = document.createElement("div");
-        const flipCardback = document.createElement("div");
+
         const infoLeft = document.createElement("div");
         const infoRight = document.createElement("div");
         const spacer = document.createElement("div");
@@ -143,7 +143,7 @@ class SellerOfTheMonthCard {
         card.className = "flip-card";
         flipCardInner.className = "flip-card-inner";
         flipCardFront.className = "flip-card-front";
-        flipCardback.className = "flip-card-back";
+    
         title.className = "menuBoxInfo txtShadow";
         name.className = "menuBoxInfo txtShadow";
         area.className = "menuBoxInfo txtShadow";
@@ -174,11 +174,11 @@ class SellerOfTheMonthCard {
 
 
 
-        flipCardback.appendChild(imgBack);
+
 
       
         flipCardInner.appendChild(flipCardFront);
-        flipCardInner.appendChild(flipCardback);
+     
         card.appendChild(flipCardInner);
 
 
