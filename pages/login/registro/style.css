@@ -32,14 +32,14 @@ p.vendedorInfo {
 
 div.cardbox {
     position: relative;
-    width: 20vw;
-    height: 50vh;
+    width: 260px;
+    height: 260px;
     padding: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh auto auto auto;
+    margin: 1% auto 1% auto;
       border-radius: 25px;
     box-shadow: -20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
@@ -59,8 +59,8 @@ a.continuar {
 }
 
 div.cardbox:hover {
-    width: 25vw;
-    height: 60vh;
+    width: 310px;
+    height: 310px;
     animation: cardBoxExpand 0.2s linear;
 }
 
@@ -88,25 +88,37 @@ div.vendedorCardBox {
 
 @keyframes cardBoxExpand {
     from {
-        width: 20vw;
-        height: 50vh;
+        width: 260px;
+        height: 260px;
     }
 
     to {
-        width: 25vw;
-        height: 60vh;
+        width: 310px;
+        height: 310px;
     }
 }
 
 @keyframes cardBoxUnexpand {
     from {
 
-        width: 25vw;
-        height: 60vh;
+        width: 310px;
+        height: 310px;
     }
 
     to {
-        width: 20vw;
-        height: 50vh;
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+    div.cardbox {
+        margin: 15px auto;
+    }
+    div.vendedorCardBox {
+        box-shadow: -20px 20px rgb(0, 0, 0);
     }
 }
