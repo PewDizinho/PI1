@@ -250,7 +250,6 @@ p.info {
 }
 
 
-<<<<<<< HEAD
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -262,12 +261,6 @@ p.info {
     transition: transform 0.8s, -webkit-transform 0.8s;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-=======
-button.category:hover {
-    
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
->>>>>>> 83974e4b441e3c0eac0cd32492fceff2166f69fd
 }
 
 
