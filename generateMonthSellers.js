@@ -2,72 +2,78 @@ const monthSellers = [
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/Paulo.jpg",
         name: "Paulo Eduardo Konopka",
+        category: "programmer",
         curso: "Análise e Desenvolvimento de Sistemas",
         title: "Programador do mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/josé.jpg",
         name: "José Augusto",
-        curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador do mês",
+        category: "design",
+        curso: "Designer",
+        title: "Designer do mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/bryan.jpg",
         name: "Bryan Alexandre",
-        curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador do mês",
+        category: "publicity",
+        curso: "Publicidade",
+        title: "Publicitário do mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/bruno.jpg",
         name: "Bruno Eufrasio",
-        curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador do mês",
+        category: "Marketing",
+        curso: "Marketing",
+        title: "Marketing do mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/Trobojão.jpg",
         name: "João Scarante",
-        curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador do mês",
+        category: "audiosvisuais",
+        curso: "Auddios Visuais",
+        title: "Audios Visuais do mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
     {
         imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/JoãoTrizotte.jpg",
         name: "João Trizotte",
+        category: "programmer",
         curso: "Análise e Desenvolvimento de Sistemas",
-        title: "Programador do mês",
+        title: "Programador do Mês",
         university: "UniOpet",
         stars: "★★★☆☆☆",
-        sellsThisMonth: "69",
-        sellAllTime: "169",
+        sellsThisMonth: "NaN",
+        sellAllTime: "NaN",
         aboutme: "Sou um entusiasta em programação, tendo conhecimento em desenvolvimento web e mobile, tenho interesse em desenvolvimentos de jogos e design",
         profileUrl: "",
     },
@@ -76,15 +82,33 @@ const monthSellers = [
 
 
 
+function filterCategory(index) {
+    const categories = ["programmer", "design", "marketing", "nutrition", "audiosvisuais", "publicity"];
+    const parentElement = document.getElementById('menuBoxInside');
 
-function generateCard() {
-
+    while (parentElement.firstChild) {
+        parentElement.removeChild(parentElement.firstChild);
+    }
     for (let seller of monthSellers) {
-        document.getElementById("gerarCardButton").style.display = "none";
+        if (seller.category.toLowerCase() == categories[index] || index > categories.length) {
+            document.getElementById("menuBoxTitle").innerText = seller.title;
+            document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard(seller).newCard);
+            if (index > categories.length) {
+
+                document.getElementById("menuBoxTitle").innerText = "Vendedores do Mês";
+            }
+        }
+    }
+    if (parentElement.firstChild == null) {
+        document.getElementById("menuBoxInside").appendChild(new SellerOfTheMonthCard().emptyCard);
+        document.getElementById("menuBoxTitle").innerText = "Não Localizado";
+    }
+}
+function generateCard() {
+    for (let seller of monthSellers) {
         const container = document.getElementById("menuBoxInside");
         container.appendChild(new SellerOfTheMonthCard(seller).newCard);
     }
-
 }
 
 class SellerOfTheMonthCard {
@@ -152,12 +176,14 @@ class SellerOfTheMonthCard {
         infoRight.appendChild(stars);
         flipCardFront.appendChild(infoLeft);
         flipCardFront.appendChild(spacer);
+
         flipCardFront.appendChild(infoRight);
 
 
 
 
         flipCardback.appendChild(imgBack);
+
         flipCardback.appendChild(aboutMe)
 
         flipCardInner.appendChild(flipCardFront);
@@ -211,6 +237,28 @@ class SellerOfTheMonthCard {
 
         return card;
     }
+    get emptyCard() {
+        const card = document.createElement("div");
+        card.className = "menuBoxCard row justify";
 
+        const infoLeft = document.createElement("div");
+        infoLeft.className = "menuBoxInfo column justify";
+
+        const name = document.createElement("p");
+
+        name.innerText = "Infelizmente não possuímos um estudante dessa área [Card in WIP]";
+
+        name.className = "menuBoxInfo";
+
+        const spacer = document.createElement("div");
+        spacer.className = "spacer";
+        infoLeft.appendChild(name);
+
+        card.appendChild(infoLeft);
+        card.appendChild(spacer);
+
+
+        return card;
+    }
 
 }

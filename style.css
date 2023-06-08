@@ -17,18 +17,23 @@
 body {
     background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 
 h1.title {
     color: white;
+    margin: 30px 0px 30px 200px;
+
 }
 
 h2.menuBoxTitle {
     color: white;
     padding-bottom: 1vw;
     box-shadow: 0px 3px rgb(0, 0, 0);
-    margin-bottom: 5px;
+    margin: 1vw;
 }
 
 h2.category {
@@ -106,7 +111,8 @@ div.menuBoxInside {
     width: 100%;
     height: 100%;
     margin: 0px 1px 1px 0px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     flex-wrap: wrap;
 }
 
@@ -169,38 +175,6 @@ img.icon {
     border-radius: 100%;
 }
 
-button.atualizarCards {
-    align-items: center;
-    background: #000020;
-    border: 0;
-    border-radius: 8px;
-    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    font-size: 1rem;
-    justify-content: center;
-    line-height: 1.5rem;
-    padding: 15px;
-    position: relative;
-    text-align: left;
-    margin: auto;
-    width: max-content;
-
-}
-
-.atualizarCards:hover {
-    background: #020281;
-    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
-}
-
-@media (min-width: 768px) {
-    .atualizarCards {
-        padding: 24px;
-    }
-}
 
 
 
@@ -269,9 +243,10 @@ p.info {
     background-color: transparent;
     width: 100%;
     height: 25%;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
     font-family: sans-serif;
+    font-size: 0.9rem;
 }
 
 
@@ -280,7 +255,7 @@ p.info {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: start;
     -webkit-transition: -webkit-transform 0.8s;
     transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
@@ -321,6 +296,8 @@ button.category:hover {
     border: 1px solid coral;
     border-radius: 1rem;
     cursor: pointer;
+    word-wrap: break-word;
+
 }
 
 .flip-card-front {
@@ -336,6 +313,12 @@ button.category:hover {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
+
+
+}
+
+.flip-card-back p.menuBoxInfo {
+    margin: 25px;
 }
 
 img.menuBoxIcon {
@@ -347,7 +330,7 @@ img.menuBoxIcon {
 }
 
 div.menuBoxInfo {
-    margin: auto 0 auto 0;
+    margin: auto 15px auto 0;
 }
 
 div.category {
@@ -358,9 +341,10 @@ div.category {
 p.menuBoxInfo {
     /* topo | direita | inferior | esquerda */
     font-size: 1em;
-    text-align: center;
+    text-align: start;
     text-overflow: clip;
-    margin-bottom: 5px;
+    margin: 0px;
+
 }
 
 .navbar {
@@ -406,9 +390,48 @@ p.menuBoxInfo {
     }
 
 }
+
 /*adicionar isso a partir de 890px*/
 @media screen and (max-width:980px) {
     h2.category {
         margin-bottom: 0em;
     }
+}
+
+@media screen and (max-height:700px) {
+    .flip-card {
+
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:572px) {
+    .flip-card {
+
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+
+
+
+
+div.notFound {
+    width: 100%;
+    height: 80%;
+    color: rgba(255, 255, 255, 0.342);
+    text-shadow: #1f1f1f 1px 1px;
+
+}
+
+p.error {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+
 }
