@@ -15,7 +15,7 @@ section.profile {
 .profile-box {
     border-radius: 20px;
     margin: 1%;
-    width: 65%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     background-color: #636060;
@@ -136,8 +136,8 @@ section.profile {
 .profile-feed {
     display: flex;
     border-radius: 20px;
-    margin-left: 4.9%;
-    width: 65%;
+    margin: 1%;
+    width: 99%;
     height: 500px;
     background-color: #636060;
 }
