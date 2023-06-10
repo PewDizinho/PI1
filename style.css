@@ -274,6 +274,7 @@ img.menuBoxIcon {
     margin-left: 15px;
     margin-top: 1px;
     margin-bottom: 3px;
+    aspect-ratio: 1/1;
 }
 
 div.menuBoxInfo {

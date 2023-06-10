@@ -40,9 +40,11 @@ section.profile {
     margin-top: 13%;*/
     position: absolute;
     width: 10%;
+    height: 15%;
     top: 245px;
     left: 7%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .info-text {
