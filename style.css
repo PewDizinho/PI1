@@ -331,14 +331,26 @@ p.menuBoxInfo {
         display: flex;
         gap: 10px;
     }
-}
 
-/*adicionar isso a partir de 890px*/
-@media screen and (max-width:980px) {
+    h1.title {
+        color: white;
+        margin: 0px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+
+    }
+
     h2.category {
         margin-bottom: 0em;
     }
+
+    img.menuBoxIcon {
+      width: 25%;
+      height: 100%;
+    }
+
 }
+
 
 @media screen and (max-height:700px) {
     .flip-card {

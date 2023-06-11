@@ -10,6 +10,8 @@
     <link rel="icon" type="img/png" href="../../assets/icon.png">
     <!--bootstrap-->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../navBarMobile.css" media="screen">
+
     <link rel="stylesheet" href="../../navBarStyle.css" media="screen">
     <link rel="stylesheet" href="./style.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,6 +58,23 @@
         </div>
     </form>
 
+
+
+    <div id="circularMenu" class="circular-menu">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <i class="fa fa-plus"></i>
+
+        </a>
+
+        <menu class="items-wrapper">
+            <a href="../../pages/clientplace/index.html" class="menu-item">&#128100;</a>
+            <a href="../../pages/contact/index.html" class="menu-item">☎</a>
+            <a href="../../pages/about/index.html" class="menu-item">❓</a>
+            <a href="../../index.html" class="menu-item">⏏</a>
+        </menu>
+
+    </div>
 </body>
 
 </html>
