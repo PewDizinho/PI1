@@ -155,7 +155,7 @@ class SellerOfTheMonthCard {
         infoRight.className = "menuBoxInfo";
 
         card.addEventListener('click', () => {
-            window.location.href = 'http://127.0.0.1:5500/pages/clientplace/vendedor/index.html?user='
+            window.location.href = 'https://pewdizinho.github.io/PI1/pages/clientplace/vendedor/index.html?user='
                 + encodeURIComponent(this.seller.name)
         })
 
