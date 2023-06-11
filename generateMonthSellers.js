@@ -127,8 +127,7 @@ class SellerOfTheMonthCard {
         const sellsThisMonth = document.createElement("p");
         const sellAllTime = document.createElement("p");
         const img = document.createElement("img");
-        const imgBack = document.createElement("img");
-
+       
 
 
          name.innerText = this.seller.name;
@@ -138,8 +137,7 @@ class SellerOfTheMonthCard {
         sellsThisMonth.innerText = `Vendas realizadas esse mês: ${this.seller.sellsThisMonth}`;
         sellAllTime.innerText = `Vendas realizadas no total: ${this.seller.sellAllTime}`;
         img.src = this.seller.imgUrl;
-        imgBack.src = this.seller.imgUrl;
-
+       
         card.className = "flip-card";
         flipCardInner.className = "flip-card-inner";
         flipCardFront.className = "flip-card-front";
@@ -153,8 +151,7 @@ class SellerOfTheMonthCard {
         sellAllTime.className = "menuBoxInfo txtShadow";
         spacer.className = "spacer";
         img.className = "menuBoxIcon";
-        imgBack.className = "menuBoxIcon";
-        infoLeft.className = "menuBoxInfo";
+       infoLeft.className = "menuBoxInfo";
         infoRight.className = "menuBoxInfo";
 
 

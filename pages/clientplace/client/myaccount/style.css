@@ -40,11 +40,14 @@ h2#bio {
 }
 
 img.pfp {
-    border-radius: 9999px;
+
     width: 13vw;
+    height: 13vw;
     margin: auto;
     display: block;
     border-radius: 100%;
+    aspect-ratio: 1/1;
+
 }
 
 div.centralBox {
