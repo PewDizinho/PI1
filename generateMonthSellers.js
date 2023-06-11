@@ -127,21 +127,21 @@ class SellerOfTheMonthCard {
         const sellsThisMonth = document.createElement("p");
         const sellAllTime = document.createElement("p");
         const img = document.createElement("img");
-       
 
 
-         name.innerText = this.seller.name;
+
+        name.innerText = this.seller.name;
         title.innerText = this.seller.title;
         area.innerText = this.seller.curso;
         stars.innerText = this.seller.stars;
         sellsThisMonth.innerText = `Vendas realizadas esse mês: ${this.seller.sellsThisMonth}`;
         sellAllTime.innerText = `Vendas realizadas no total: ${this.seller.sellAllTime}`;
         img.src = this.seller.imgUrl;
-       
+
         card.className = "flip-card";
         flipCardInner.className = "flip-card-inner";
         flipCardFront.className = "flip-card-front";
-    
+
         title.className = "menuBoxInfo txtShadow";
         name.className = "menuBoxInfo txtShadow";
         area.className = "menuBoxInfo txtShadow";
@@ -151,9 +151,13 @@ class SellerOfTheMonthCard {
         sellAllTime.className = "menuBoxInfo txtShadow";
         spacer.className = "spacer";
         img.className = "menuBoxIcon";
-       infoLeft.className = "menuBoxInfo";
+        infoLeft.className = "menuBoxInfo";
         infoRight.className = "menuBoxInfo";
 
+        card.addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/pages/clientplace/vendedor/index.html?user='
+                + encodeURIComponent(this.seller.name)
+        })
 
         infoLeft.appendChild(name);
         infoLeft.appendChild(title);
@@ -173,9 +177,9 @@ class SellerOfTheMonthCard {
 
 
 
-      
+
         flipCardInner.appendChild(flipCardFront);
-     
+
         card.appendChild(flipCardInner);
 
 
