@@ -23,7 +23,7 @@ main, div.side, div.categoryButtons {
 }
 
 main {
-    margin-left: 30px;
+    margin: auto;
     width: 70%;
 }
 
@@ -67,38 +67,39 @@ div.bottomScreen {
     display: flex;
     flex-direction: column;
 
-    width: 70%;
-    margin-left: 30px;
+    width: 94.4%;
+    margin: auto;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.47);
     border-color: rgb(0, 0, 0);
     border-style: solid;
-    height: 40vw;
+    height: 400px;
 }
 
 div.head {
-    height: 15vw;
+    height: 170px;
     position: relative;
 }
 
 div.leftInfo {
-    margin-left: 1px;
-    width: 50%;
-    height: 100%;
-
+    height: auto;
+    width: 45%;
+    text-align: end;
 }
 
 div.rightInfo {
-    margin-left: 10px;
-    width: 50%;
-    height: 100%;
+
+    width: 45%;
+    height: auto;
 
 
 }
 
 div.bottomPart {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 60%;
 }
 
 img.banner {
@@ -139,7 +140,7 @@ h2.estatisticas {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 /**/
@@ -147,7 +148,6 @@ h1 {
 div.redesSociais {
     display: flex;
     flex-direction: row;
-    flex: auto;
     align-self: center;
 }
 
@@ -170,6 +170,7 @@ div.redesSociais {
     cursor: pointer;
     transition-duration: .3s;
     overflow: hidden;
+    margin: 5px;
 
 
 }
@@ -181,4 +182,38 @@ div.redesSociais {
 
 .svgIcon path {
     fill: white;
+}
+
+@media screen and (max-width:1150px) {
+    div.mainBase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        width: 100%;
+    }
+    div.side {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        margin: 0;
+    }
+    div.redesSociais {
+        flex-direction: row;
+    }
+    div.mainBaseBottom {
+        width: 100%;
+        margin: 0;
+    }
+    div.leftInfo {
+        height: unset;
+    }
+    div.rightInfo {
+        height: unset;
+    }
+    h1 {
+        font-size: 10px
+    }
 }
