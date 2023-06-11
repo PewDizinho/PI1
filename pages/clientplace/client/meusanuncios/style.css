@@ -217,30 +217,41 @@ button.category {
         flex-direction: column;
         align-items: center;
     }
+
     .dropdown {
         order: 1;
         margin-right: 9%;
         margin-bottom: 1%;
-    }    
+    }
+
     main.leftInfo {
         order: 2;
         width: 100%;
     }
+
     main.leftInfo input {
         width: 80%;
         margin-left: 10%;
         text-align: center;
     }
+
     main.leftInfo label {
-        margin-left: 33%;
+        margin-left: 23%;
     }
-    aside.rightInfo {
+
+    .dropdown-btn{
+        margin-left: 0;
+    } aside.rightInfo {
         order: 3;
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
+
     button.category {
         width: 150px;
     }
+
+
+
 }

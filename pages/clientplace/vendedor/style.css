@@ -117,6 +117,7 @@ img.pfp {
     margin: auto auto auto auto;
     margin-top: 3%;
     margin-left: 2%;
+    aspect-ratio: 1/1;
 }
 
 

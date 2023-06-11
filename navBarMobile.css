@@ -10,7 +10,7 @@
     width: 3.5em;
     height: 3.5em;
     border-radius: 50%;
-    background-color: hsl(4, 98%, 60%);
+    background-color: hsl(125, 98%, 60%);
     box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
     color: hsl(0, 0%, 100%);
     text-align: center;
@@ -46,7 +46,7 @@
     top: 0;
     right: 0;
     z-index: -2;
-    background-color: hsl(4, 98%, 60%);
+    background-color: hsl(123, 97%, 26%);
     transition: all .3s ease;
 }
 
