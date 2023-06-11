@@ -55,8 +55,8 @@ div.centralBox {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    height: 70vh;
-    width: 80vw;
+    height: auto;
+    width: 80%;
     margin: 1% auto auto auto;
     padding: 5%;
     box-shadow: 2px 5px 10px rgb(5, 5, 5), 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -64,16 +64,20 @@ div.centralBox {
 }
 
 main.leftInfo {
-    height: 70vh;
-    width: 27vw;
-
-
+    height: auto;
+    width: 32%;
+    margin-right: 2.5%;
 }
 
 aside.rightInfo {
-    height: 70vh;
+    height: auto;
     margin-left: 2.5%;
-    width: 27vw;
+    width: 38%;
+}
+
+aside.rightInfo-center {
+    height: auto;
+    width: 20%;
 }
 
 
@@ -215,4 +219,34 @@ aside.rightInfo {
     opacity: 1;
     transform: translateY(30px);
     transition-duration: .3s;
+}
+
+@media screen and (max-width:980px) {
+    div.centralBox {
+        align-items: center;
+        flex-direction: column;
+    }
+    main.leftInfo {
+        order: 3;
+        width: 90%;
+    }
+    main.leftInfo h2 {
+        text-align: center;
+    }
+    aside.rightInfo {
+        order: 1;
+        width: 70%;
+    }
+    .redesSociais {
+        display: flex;
+        justify-content: space-around;
+    }
+    aside.rightInfo h2 {
+        text-align: center;
+    }
+    aside.rightInfo-center {
+        order: 2;
+        width: 70%;
+    }
+ 
 }
