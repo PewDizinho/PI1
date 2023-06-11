@@ -99,8 +99,8 @@ div.centralBox {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    height: 70vh;
-    width: 80vw;
+    height: auto;
+    width: 90%;
     margin: 1% auto auto auto;
     padding: 5%;
     box-shadow: 2px 5px 10px rgb(5, 5, 5), 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -108,16 +108,13 @@ div.centralBox {
 }
 
 main.leftInfo {
-    height: 70vh;
-    width: 27vw;
-
-
+    height: auto;
+    width: 40%;
 }
 
 aside.rightInfo {
-    height: 70vh;
+    height: auto;
     margin-left: 2.5%;
-
 }
 
 
@@ -212,4 +209,38 @@ button.category {
     width: 15%;
     margin-left: 15px;
     margin-top: 15px;
+}
+
+@media screen and (max-width:980px) {
+    div.centralBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdown {
+        order: 1;
+        margin-right: 9%;
+        margin-bottom: 1%;
+    }    
+    main.leftInfo {
+        order: 2;
+        width: 100%;
+    }
+    main.leftInfo input {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    main.leftInfo label {
+        margin-left: 33%;
+    }
+    aside.rightInfo {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    button.category {
+        width: 150px;
+    }
 }
