@@ -39,35 +39,11 @@ body {
   align-items: center;
 }
 
-/* icones dentro do email e da senha */
-.icon1 i {
-  position: absolute;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.icon-box1 i {
-  background-color: black;
-  padding: 14px;
-  border-radius: 60%;
-}
-
-.icon2 i {
-  position: absolute;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.icon-box2 i {
-  background-color: black;
-  padding: 14px;
-  border-radius: 60%;
-}
 
 /* Fundo e animações do form */
 form {
   background-color: #ffffff;
-    border-radius: 25px;
+  border-radius: 25px;
   padding: 20px;
   box-shadow: -20px 20px rgb(0, 0, 0);
   animation: boxShadowAnimation 0.375s forwards;
@@ -97,18 +73,19 @@ input[type="password"] {
   box-sizing: border-box;
   margin-bottom: 3vh;
   margin-top: 2px;
+  margin-left: 15px;
   height: 45px;
   border-radius: 20px;
   border-style: solid solid solid solid;
   border-width: medium medium 2px 1px;
   border-color: initial initial #a7a1a1 initial;
   outline: none;
+  padding: 15px;
 }
 
 input::placeholder {
   color: #272727;
   font-weight: lighter;
-  padding: 50px;
   font-size: 14px;
 }
 
@@ -163,6 +140,7 @@ a#registro {
   background-color: #fc8f00;
   transform: scale(1.1);
 }
+
 #mainbuttons:not(hover) {
   transition: 0.5s ease;
   background-color: #4CAF50;
@@ -174,9 +152,11 @@ a#registro {
   margin: 5% auto;
   width: 58%;
 }
-.login-option:hover{
+
+.login-option:hover {
   cursor: pointer;
 }
+
 .google-login {
   align-items: center;
   display: flex;
@@ -211,6 +191,11 @@ a#registro {
   font-size: 14px;
   color: rgb(255, 255, 255);
   margin-left: 5%;
+}
+
+h1 {
+  margin: 0px;
+  margin-left: 15px;
 }
 
 /* Animação da boxshadow */

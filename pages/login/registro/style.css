@@ -40,7 +40,7 @@ div.cardbox {
     flex-direction: column;
     align-items: center;
     margin: 1% auto 1% auto;
-      border-radius: 25px;
+    border-radius: 25px;
     box-shadow: -20px 20px rgb(0, 0, 0);
     animation: boxShadowAnimation 0.375s forwards;
 }
@@ -54,8 +54,8 @@ h1.topTitle {
 
 a.continuar {
 
-   font-weight: bold;
-   font-size: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 div.cardbox:hover {
@@ -66,10 +66,13 @@ div.cardbox:hover {
 
 div.vendedorCardBox:hover {
     --vendedorInfo: display;
+    height: fit-content;
+
 }
 
 div.clientCardBox:hover {
     --clientInfo: display;
+    height: fit-content;
 }
 
 div.cardbox:not(hover) {
@@ -94,7 +97,7 @@ div.vendedorCardBox {
 
     to {
         width: 310px;
-        height: 310px;
+        height: fit-content;
     }
 }
 
@@ -102,7 +105,7 @@ div.vendedorCardBox {
     from {
 
         width: 310px;
-        height: 310px;
+        height: fit-content;
     }
 
     to {
@@ -115,9 +118,11 @@ div.vendedorCardBox {
     .row {
         flex-direction: column;
     }
+
     div.cardbox {
         margin: 15px auto;
     }
+
     div.vendedorCardBox {
         box-shadow: -20px 20px rgb(0, 0, 0);
     }
