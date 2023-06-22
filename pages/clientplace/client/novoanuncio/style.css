@@ -13,7 +13,9 @@ input#img {
 }
 
 
-
+.selection-box {
+    padding: 15px;
+}
 
 input[type="file"] {
     display: none;

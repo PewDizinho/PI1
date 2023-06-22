@@ -5,7 +5,9 @@
     --button-txt-color: white;
     --hintTextColor: transparent;
 }
-
+img.member {
+    aspect-ratio: 1/1;
+}
 #modoEscuro {
     background-color: var(--button-color);
     color: var(--button-txt-color);
