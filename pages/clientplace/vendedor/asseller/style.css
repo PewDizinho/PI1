@@ -1,0 +1,261 @@
+body {
+    background-color: #1f1f1f;
+}
+
+section.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-box {
+    border-radius: 20px;
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #636060;
+}
+
+.background {
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.profile-img,
+.profile-back {
+    display: flex;
+}
+
+.profile-image {
+    border: 6px solid #636060;
+    display: flex;
+
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    top: 245px;
+    left: 7%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.info-text {
+    display: flex;
+    margin: 5% 0 0 5%;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    height: 43vh;
+}
+
+p.nome {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.profissao {
+    margin: 5px;
+}
+
+p.bio {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profesional-info {
+    margin: 5% 2%;
+    width: 70%;
+    overflow-y: auto;
+
+}
+
+.empresa {
+    align-items: center;
+    display: flex;
+    margin-left: 80%;
+}
+
+.empresa img {
+    width: 30%;
+    padding: 2%;
+    background-color: white;
+}
+
+.empresa p {
+    color: white;
+    padding: 8%;
+}
+
+.profile-side {
+    margin-top: 1%;
+}
+
+.profile-options {
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.options-content a {
+    text-decoration: none;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.options-content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hr-1 {
+    width: 85%;
+}
+
+.profile-statistic {
+    font-weight: bold;
+    color: white;
+    background-color: #636060;
+    padding: 10px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.statistic-text {
+    margin-left: 20px;
+    text-align: start;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.profile-feed {
+    display: flex;
+    border-radius: 20px;
+    margin: 1%;
+    width: 99%;
+    height: 500px;
+    background-color: #636060;
+}
+
+h1.bottomTitle {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px #1f1f1f;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+div.bottomPart {
+    border-radius: 20px;
+    margin: 1%;
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    background-color: #636060;
+}
+
+div.anunciosNovos {
+    padding: 30px;
+}
+
+@media screen and (max-width:980px) {
+    section.profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-box {
+        width: 100%;
+    }
+
+    .profile-image {
+        top: 175px;
+        left: 20px;
+    }
+
+    .profile-side {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-options {
+        margin-right: 0%;
+        width: 45%;
+        height: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+        margin-top: 0px;
+    }
+
+    .profile-statistic {
+        margin: 0px;
+        width: 45%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: start;
+        background-color: #636060;
+        text-align: center;
+    }
+
+
+
+    h1.statistic-info {
+        margin: 10px 0px 5px 0px;
+    }
+
+    .options-content {
+        width: 100%;
+    }
+
+    .profile-feed {
+        margin-left: 0%;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .statistic-text {
+        padding: 0%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:459px) {
+    .profile-image {
+        width: 20%;
+    }
+
+    p.statistic-text {
+        font-size: smaller;
+        margin-top: 1px;
+    }
+}
