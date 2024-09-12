@@ -24,7 +24,7 @@ const monthSellers = [
         profileUrl: "",
     },
     {
-        imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/audrei.jpeg",
+        imgUrl: "https://pewdizinho.github.io/PI1/assets/fotosZoadas/fundadores/Audrei.jpeg",
         name: "Audrey Cristhiny",
         category: "design",
         curso: "Designer",
