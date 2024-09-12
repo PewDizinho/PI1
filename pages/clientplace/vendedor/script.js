@@ -5,7 +5,7 @@ const monthSellers = [
         category: "programmer",
         curso: "Análise e Desenvolvimento de Sistemas",
         title: "Programador do mês",
-        university: "UniOpet",
+        university: "Tuiuti",
         stars: "★★★☆☆☆",
         sellsThisMonth: "150",
         sellAllTime: "150",
